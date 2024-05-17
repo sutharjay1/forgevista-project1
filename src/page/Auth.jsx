@@ -12,12 +12,13 @@ const Auth = () => {
 
 	return (
 		<div className="w-ful h-full flex items-center justify-center ">
-			<div className="grid grid-cols-1 lg:grid-cols-2">
-				<div className="h-full w-full">
+			<div className="grid grid-cols-1 lg:grid-cols-2 grid-flow-col-dense">
+				<div className="h-fit w-full">
 					<img
 						className="mx-auto h-full w-full rounded-md object-cover"
-						src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+						src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt=""
+						height={500}
 					/>
 				</div>
 				<div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
