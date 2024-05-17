@@ -46,8 +46,7 @@ const Auth = () => {
 											htmlFor="name"
 											className="text-base font-medium text-gray-900"
 										>
-											{' '}
-											Full Name{' '}
+											Full Name
 										</label>
 										<div className="mt-2">
 											<input
@@ -64,8 +63,7 @@ const Auth = () => {
 										htmlFor="email"
 										className="text-base font-medium text-gray-900"
 									>
-										{' '}
-										Email address{' '}
+										Email address
 									</label>
 									<div className="mt-2">
 										<input
@@ -82,8 +80,7 @@ const Auth = () => {
 											htmlFor="password"
 											className="text-base font-medium text-gray-900"
 										>
-											{' '}
-											Password{' '}
+											Password
 										</label>
 									</div>
 									<div className="mt-2">
