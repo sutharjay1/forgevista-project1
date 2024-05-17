@@ -56,7 +56,7 @@ const Header = () => {
 							</span>
 						</Link>
 					</div>
-					<div className="hidden md:flex items-center justify-center gap-12">
+					<div className="hidden lg:flex items-center justify-center gap-12">
 						<div className="flex items-center justify-center gap-6">
 							{menuOptions.map((option) => (
 								<Link
@@ -83,7 +83,7 @@ const Header = () => {
 						/>
 					</div>
 
-					<div className="flex	 md:hidden items-center justify-center gap-12">
+					<div className="flex	 lg:hidden items-center justify-center gap-12">
 						<span onClick={handleMenu}>
 							<CgMenuGridO size={32} />
 						</span>
@@ -91,7 +91,7 @@ const Header = () => {
 				</div>
 			</div>
 			{isMenuOpen && (
-				<div className="absolute top-[calc(100%+1px)] left-0 -translate-x-1/2translate-y-1/2 w-full h-fit py-24 flex flex-col items-center justify-start px-4 z-50 bg-rose-500">
+				<div className="absolute top-[calc(100%)] left-0 -translate-x-1/2translate-y-1/2 w-full h-fit py-24 flex flex-col items-center justify-start px-4 z-50 bg-gradient-to-r from-[#fbe7d0] via-[#ffeedbf5] to-emerald-100 backdrop-blur-xl gap-5">
 					<div className="w-full h-full flex flex-col items-center justify-center gap-6">
 						{menuOptions.map((option) => (
 							<Link
@@ -110,6 +110,12 @@ const Header = () => {
 							</Link>
 						))}
 					</div>
+					<Button
+						message="Sign Up"
+						className="px-6 rounded-2xl bg-[#0a7558] "
+						// icon={<FiArrowUpRight size={16} />}
+						href={'/auth'}
+					/>
 				</div>
 			)}
 		</div>

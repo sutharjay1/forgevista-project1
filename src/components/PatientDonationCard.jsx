@@ -18,7 +18,7 @@ const PatientDonationCard = ({
 			<img
 				src={img}
 				alt={title}
-				className="h-[200px] w-full rounded-md object-cover"
+				className="h-[200px] mx-auto w-full rounded-md object-cover"
 				draggable="false"
 			/>
 			<div className="w-full p-4 space-y-2.5">

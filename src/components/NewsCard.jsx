@@ -7,7 +7,7 @@ const NewsCard = ({ img, date, title, description, href }) => {
 			<img
 				src={img}
 				alt={title}
-				className="h-[200px] w-full rounded-lg object-cover"
+				className="h-[200px] mx-auto  w-full rounded-lg object-cover"
 			/>
 			<div className="w-full flex flex-col justify-between">
 				<div>
