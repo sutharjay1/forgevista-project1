@@ -15,14 +15,13 @@ const Button = ({
 	containerWidth,
 }) => {
 	const classes = twMerge(
-		'flex items-center justify-center gap-2	 text-zinc-50 text-center font-semibold py-1.5	',
+		'flex items-center justify-center gap-2	 text-[#] text-center font-semibold py-1.5	',
 		className
 	);
 
 	const backgroundColor = 'bg-[#0a7558] text-zinc-50';
 	const allowBorder = 'border-[#0a7558] border text-[#0a7558]';
-	const onlyText =
-		'text-[#0a7558] hover:border-[#0a7558] ';
+	const onlyText = 'text-[#0a7558] hover:border-[#0a7558] ';
 
 	return (
 		<div
@@ -35,7 +34,7 @@ const Button = ({
 				className={`${containerWidth ? 'w-full' : 'w-fit'}`}
 			>
 				<button
-					className={`w-fit  ${bg && backgroundColor} ${
+					className={`${containerWidth ? 'w-full' : 'w-fit'}  ${bg && backgroundColor} ${
 						border && allowBorder
 					} ${text && onlyText} ${classes}`}
 				>

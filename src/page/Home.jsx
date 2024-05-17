@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import { IoPlayOutline } from 'react-icons/io5';
 import { PiBowlFood, PiHandHeartFill } from 'react-icons/pi';
 import { LuHeartHandshake } from 'react-icons/lu';
-import { FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 import { GiMedicines } from 'react-icons/gi';
 import { BsPeopleFill } from 'react-icons/bs';
 import { FaBookOpenReader } from 'react-icons/fa6';
@@ -87,13 +87,18 @@ const PatientDonationCard = ({
 				src={img}
 				alt={title}
 				className="h-[200px] w-full rounded-md object-cover"
+				draggable="false"
 			/>
 			<div className="w-full p-4 space-y-2.5">
 				<div className="w-full flex flex-wrap">
 					{tags?.map((tag) => (
 						<span
-							className={`mb-2 mr-2 inline-block rounded-full bg-[${tagColor}] px-3 py-1 text-sm font-semibold text-[${tagTextColor}]`}
+							className="mb-2 mr-2 inline-block rounded-full px-3 py-1 text-sm font-semibold"
 							key={tag}
+							style={{
+								backgroundColor: tagColor,
+								color: tagTextColor,
+							}}
 						>
 							{tag}
 						</span>
@@ -102,10 +107,12 @@ const PatientDonationCard = ({
 				<span className="inline-flex items-center text-xl font-semibold">
 					{title}
 				</span>
-				<p className="mt-3 text-sm text-[#868686]">{description}</p>
+				<p className="w-full  mt-3 text-sm text-[#868686]">
+					{description}
+				</p>
 
-				<div className="w-full flex flex-col items-center justify-center space-y-2">
-					<div className="w-full flex items-center space-x-2">
+				<div className="w-full flex flex-col items-center justify-center space-y-4">
+					<div className="w-full flex items-center space-x-2 space-y-3">
 						<div className="w-full bg-gray-200 h-[3px] rounded">
 							<div
 								className="bg-[#ef9f43] h-[3px] rounded"
@@ -134,9 +141,11 @@ const PatientDonationCard = ({
 
 				<Button
 					message={buttonTitle || 'Donate'}
-					icon={<FiArrowUpRight />}
-					className="w-full px-6 py-3 rounded-xl text-white bg-[#0a7558]"
+					className="w-full px-6 py-3 mt-2 rounded-xl text-white bg-[#0a7558]"
 					href={href}
+					containerWidth={true}
+					text={true}
+					bg={false}
 				/>
 			</div>
 		</div>
@@ -145,7 +154,7 @@ const PatientDonationCard = ({
 
 const Home = () => {
 	return (
-		<div className="w-full h-screen bg-[#fefaf6]">
+		<div className="w-full h-screen bg-[#fefaf6] ">
 			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col md:flex-row items-center justify-center">
 				<div className="w-full md:w-1/2 md:pr-12 space-y-5">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
@@ -207,8 +216,8 @@ const Home = () => {
 						<span className="text-2xl font-medium text-[#fbd066]">
 							ABOUT US
 						</span>
-						<div className="w-full flex flex-col items-start justify-start space-y-3 md:space-y-5 pb-5">
-							<span className="text-4xl md:text-5xl font-semibold	md:leading-loose">
+						<div className="w-full flex flex-col items-start justify-start space-y-3  pb-5">
+							<span className="text-4xl md:text-5xl font-semibold md:leading-tight">
 								Helping People In Need Around The World
 							</span>
 							<span className="w-full text-base font-semibold text-[#868686]">
@@ -312,24 +321,81 @@ const Home = () => {
 					/>
 				</div>
 
-				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  items-center justify-center gap-8 mt-8">
-					<PatientDonationCard
-						title={'Help Donate For Cianjur Earthquake Victims'}
-						tags={['Social Service']}
-						description={
-							'Help Donate for Cianjur Earthquake Victims by providing food, clothes, medicines for their daily needs.'
-						}
-						img={
-							'https://c.ndtvimg.com/2023-02/3dp24qug_building_640x480_08_February_23.jpg'
-						}
-						amountRaised={'1250'}
-						goal={'5000'}
-						progress={'50'}
-						href={'/donate'}
-						buttonTitle={'Donate'}
-						tagColor={'#dfdcfa'}
-						tagTextColor={'#8c7cf9'}
-					/>
+				<div className="w-full flex flex-col items-center justify-center mt-16">
+					<div className="w-full flex flex-col items-center justify-start">
+						<div className="w-full flex items-center justify-start gap-5">
+							<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
+								Introduce Our Campaign
+							</span>
+						</div>
+						<div className="w-full flex flex-col gap-3 md:flex-row items-center justify-between">
+							<span className="w-full text-sm md:text-base font-semibold text-[#868686]">
+								How do something great to help others
+							</span>
+							<Button
+								message={'View All'}
+								href={'/programs'}
+								className="w-full text-base font-semibold px-6 py-3 rounded-xl bg-[#0a7558] "
+								icon={<FiArrowUpRight size={28} />}
+								text={true}
+								border={true}
+							/>
+						</div>
+					</div>
+
+					<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 		 items-center justify-center gap-8 mt-8">
+						<PatientDonationCard
+							title={'Help Donate For Cianjur Earthquake Victims'}
+							tags={['Social Service']}
+							description={
+								'Help Donate for Cianjur Earthquake Victims by providing food, clothes, medicines for their daily needs.'
+							}
+							img={
+								'https://c.ndtvimg.com/2023-02/3dp24qug_building_640x480_08_February_23.jpg'
+							}
+							amountRaised={'1250'}
+							goal={'5000'}
+							progress={'50'}
+							href={'/donate'}
+							buttonTitle={'Donate'}
+							tagColor={'#dfdcfa'}
+							tagTextColor={'#8c7cf9'}
+						/>
+						<PatientDonationCard
+							title={'Campaign To Provide Books For Children'}
+							tags={['Education']}
+							description={
+								'Campaign to provide quality books for children who are in need of proper education for their development.'
+							}
+							img={
+								'https://pragya.org/assets/images/icons/1560508933_India_Issues_Inner_Edu1.jpg'
+							}
+							amountRaised={'2450'}
+							goal={'3500'}
+							progress={'70'}
+							href={'/donate'}
+							buttonTitle={'Donate'}
+							tagColor={'#f9dce6'}
+							tagTextColor={'#f96499'}
+						/>
+						<PatientDonationCard
+							title={'Help Children Cancer Fighters'}
+							tags={['Medical Help']}
+							description={
+								'Support children of cancer warriors in receiving the best care and treatment for recovery.'
+							}
+							img={
+								'https://st4.depositphotos.com/2249091/22137/i/450/depositphotos_221371480-stock-photo-weak-girl-cancer-wearing-pink.jpg'
+							}
+							amountRaised={'4050'}
+							goal={'4500'}
+							progress={'90'}
+							href={'/donate'}
+							buttonTitle={'Donate'}
+							tagColor={'#cee3de'}
+							tagTextColor={'#228268'}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
