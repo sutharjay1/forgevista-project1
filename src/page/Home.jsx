@@ -10,6 +10,8 @@ import { BsPeopleFill } from 'react-icons/bs';
 import { FaBookOpenReader } from 'react-icons/fa6';
 import PatientDonationCard from '../components/PatientDonationCard';
 import Card from '../components/ProgramCard';
+import NewsCard from '../components/NewsCard';
+import randomDate from '../lib/getRandomDate';
 
 const Info = ({ title, description }) => {
 	return (
@@ -312,6 +314,60 @@ const Home = () => {
 							href={'/news'}
 						/>
 					</div>
+				</div>
+				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-start justify-start gap-8 mt-8">
+					<NewsCard
+						title={
+							'Facts About COVID Kraken, The Latest Omicron Variant'
+						}
+						description={
+							'The latest Omicron variant has been detected in Indonesia. Previously, this variant was known to have first appeared in the country in 2019...'
+						}
+						img={
+							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+						}
+						date={randomDate}
+						href={'/news/1'}
+					/>
+					<NewsCard
+						title={
+							'The Shop Makes Donations For Cianjur Earthquake'
+						}
+						description={
+							'The Cianjur earthquake that occurred a few months ago has moved all Indonesian people to help the people  affected by th...'
+						}
+						img={
+							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+						}
+						date={randomDate}
+						href={'/news/1'}
+					/>
+					<NewsCard
+						title={
+							'Should Women Get Tetanus Shots Before Marriage?'
+						}
+						description={
+							'One of the requirements for women who are getting married is a tetanus shot or tetanus toxoid. TT injections are also know...'
+						}
+						img={
+							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+						}
+						date={randomDate}
+						href={'/news/1'}
+					/>
+					<NewsCard
+						title={
+							'Cases of Diabetes Mellitus in Children Soared Sharply!'
+						}
+						description={
+							'According to WHO, the frequency of diabetes mellitus worldwide is increasing.Based on research results, children are atm...'
+						}
+						img={
+							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+						}
+						date={randomDate}
+						href={'/news/1'}
+					/>
 				</div>
 			</div>
 		</div>
