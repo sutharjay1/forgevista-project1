@@ -71,6 +71,8 @@ const Card = ({ title, description, icon, color, href }) => {
 const PatientDonationCard = ({
 	img,
 	tags,
+	tagColor,
+	tagTextColor,
 	title,
 	description,
 	amountRaised,
@@ -80,37 +82,6 @@ const PatientDonationCard = ({
 	buttonTitle,
 }) => {
 	return (
-		// <div className="w-full rounded-md border">
-		// 	<img
-		// 		src={img}
-		// 		alt={title}
-		// 		className="h-[200px] w-full rounded-md object-cover"
-		// 	/>
-		// 	<div className="w-full p-4 space-y-2.5">
-		// 		<div className="w-full flex flex-wrap ">
-		// 			{tags?.map((tag) => (
-		// 				<span
-		// 					className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-900"
-		// 					key={tag}
-		// 				>
-		// 					{tag}
-		// 				</span>
-		// 			))}
-		// 		</div>
-		// 		<span className="inline-flex items-center text-xl font-semibold">
-		// 			{title}
-		// 		</span>
-		// 		<p className="mt-3 text-sm text-[#868686]">{description}</p>
-		// 		<Button
-		// 			message={'Donate'}
-		// 			icon={<FiArrowUpRight />}
-		// 			className="w-full px-6 py-3 rounded-xl text-[#0a7558] "
-		// 			bg={true}
-		// 			text={true}
-		// 			href={href}
-		// 		/>
-		// 	</div>
-		// </div>
 		<div className="w-full rounded-md border">
 			<img
 				src={img}
@@ -121,7 +92,7 @@ const PatientDonationCard = ({
 				<div className="w-full flex flex-wrap">
 					{tags?.map((tag) => (
 						<span
-							className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-900"
+							className={`mb-2 mr-2 inline-block rounded-full bg-[${tagColor}] px-3 py-1 text-sm font-semibold text-[${tagTextColor}]`}
 							key={tag}
 						>
 							{tag}
@@ -133,25 +104,39 @@ const PatientDonationCard = ({
 				</span>
 				<p className="mt-3 text-sm text-[#868686]">{description}</p>
 
-				<div className="w-full flex flex-col items-center justify-center">
-					<div className="w-full flex items-center ">
-						<div className="w-full h-[3px] bg-[#0a7558]"></div>
-						<span>{progress}%</span>
+				<div className="w-full flex flex-col items-center justify-center space-y-2">
+					<div className="w-full flex items-center space-x-2">
+						<div className="w-full bg-gray-200 h-[3px] rounded">
+							<div
+								className="bg-[#ef9f43] h-[3px] rounded"
+								style={{ width: `${progress}%` }}
+							></div>
+						</div>
+						<span className="text-sm text-[#16191E]">
+							{progress}%
+						</span>
 					</div>
-					<div className="w-full flex items-center justify-between">
-						<span>${amountRaised}</span>
-						<span>${goal}</span>
+					<div className="w-full flex items-center justify-between text-sm text-[#868686]">
+						<span>
+							Raised:{' '}
+							<span className="text-[#ef9f43] font-bold">
+								${amountRaised}
+							</span>
+						</span>
+						<span>
+							Goal:{' '}
+							<span className="text-[#0a7558] font-bold">
+								${goal}
+							</span>
+						</span>
 					</div>
 				</div>
 
 				<Button
 					message={buttonTitle || 'Donate'}
 					icon={<FiArrowUpRight />}
-					className="w-full px-6 py-3 rounded-xl text-[#0a7558]"
-					bg={true}
-					text={true}
+					className="w-full px-6 py-3 rounded-xl text-white bg-[#0a7558]"
 					href={href}
-					containerWidth={true}
 				/>
 			</div>
 		</div>
@@ -342,6 +327,8 @@ const Home = () => {
 						progress={'50'}
 						href={'/donate'}
 						buttonTitle={'Donate'}
+						tagColor={'#dfdcfa'}
+						tagTextColor={'#8c7cf9'}
 					/>
 				</div>
 			</div>

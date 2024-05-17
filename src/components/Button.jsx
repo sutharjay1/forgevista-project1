@@ -22,7 +22,7 @@ const Button = ({
 	const backgroundColor = 'bg-[#0a7558] text-zinc-50';
 	const allowBorder = 'border-[#0a7558] border text-[#0a7558]';
 	const onlyText =
-		'text-[#0a7558] hover:border-[#0a7558] hover:text-[#0a7558]';
+		'text-[#0a7558] hover:border-[#0a7558] ';
 
 	return (
 		<div
