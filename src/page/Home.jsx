@@ -8,6 +8,8 @@ import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 import { GiMedicines } from 'react-icons/gi';
 import { BsPeopleFill } from 'react-icons/bs';
 import { FaBookOpenReader } from 'react-icons/fa6';
+import PatientDonationCard from '../components/PatientDonationCard';
+import Card from '../components/ProgramCard';
 
 const Info = ({ title, description }) => {
 	return (
@@ -34,119 +36,6 @@ const InfoCard = ({ title, description, icon, color }) => {
 				<div className="w-full text-base font-medium text-[#868686]  md:w-[80%]">
 					{description}
 				</div>
-			</div>
-		</div>
-	);
-};
-
-const Card = ({ title, description, icon, color, href }) => {
-	return (
-		<div className="flex flex-col items-center justify-center space-y-4 p-6  rounded-2xl cursor-pointer hover:shadow-xl hover:drop-shadow-lg transition-shadow duration-300">
-			<div
-				className="w-fit flex items-center justify-center rounded-full p-4"
-				style={{ backgroundColor: color }}
-			>
-				<span>{icon}</span>
-			</div>
-			<div className="text-3xl font-bold text-center">{title}</div>
-			<div className="text-base font-medium text-center text-[#868686] w-full md:w-[60%]">
-				{description}
-			</div>
-			<a
-				href={href}
-				className="w-full flex justify-center"
-			>
-				<Button
-					message="Read More"
-					icon={<FiArrowUpRight />}
-					className="px-6 py-3 rounded-xl text-[#0a7558] "
-					text={true}
-					href={href}
-				/>
-			</a>
-		</div>
-	);
-};
-
-const PatientDonationCard = ({
-	img,
-	tags,
-	tagColor,
-	tagTextColor,
-	title,
-	description,
-	amountRaised,
-	goal,
-	progress,
-	href,
-	buttonTitle,
-}) => {
-	return (
-		<div className="w-full rounded-md border">
-			<img
-				src={img}
-				alt={title}
-				className="h-[200px] w-full rounded-md object-cover"
-				draggable="false"
-			/>
-			<div className="w-full p-4 space-y-2.5">
-				<div className="w-full flex flex-wrap">
-					{tags?.map((tag) => (
-						<span
-							className="mb-2 mr-2 inline-block rounded-full px-3 py-1 text-sm font-semibold"
-							key={tag}
-							style={{
-								backgroundColor: tagColor,
-								color: tagTextColor,
-							}}
-						>
-							{tag}
-						</span>
-					))}
-				</div>
-				<span className="inline-flex items-center text-xl font-semibold">
-					{title}
-				</span>
-				<p className="w-full  mt-3 text-sm text-[#868686]">
-					{description}
-				</p>
-
-				<div className="w-full flex flex-col items-center justify-center space-y-4">
-					<div className="w-full flex items-center space-x-2 space-y-3">
-						<div className="w-full bg-gray-200 h-[3px] rounded">
-							<div
-								className="bg-[#ef9f43] h-[3px] rounded"
-								style={{ width: `${progress}%` }}
-							></div>
-						</div>
-						<span className="text-sm text-[#16191E]">
-							{progress}%
-						</span>
-					</div>
-					<div className="w-full flex items-center justify-between text-sm text-[#868686]">
-						<span>
-							Raised:{' '}
-							<span className="text-[#ef9f43] font-bold">
-								${amountRaised}
-							</span>
-						</span>
-						<span>
-							Goal:{' '}
-							<span className="text-[#0a7558] font-bold">
-								${goal}
-							</span>
-						</span>
-					</div>
-				</div>
-
-				<Button
-					message={buttonTitle || 'Donate'}
-					className="w-full px-6 py-3 mt-2 rounded-xl text-white bg-[#0a7558]"
-					href={href}
-					containerWidth={true}
-					text={true}
-					bg={false}
-				/>
 			</div>
 		</div>
 	);
@@ -320,26 +209,30 @@ const Home = () => {
 						color={'#fee0ea'}
 					/>
 				</div>
+			</div>
 
-				<div className="w-full flex flex-col items-center justify-center mt-16">
+			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col items-start justify-start">
+				<div className="w-full flex flex-col items-center justify-center mt-16 ">
 					<div className="w-full flex flex-col items-center justify-start">
-						<div className="w-full flex items-center justify-start gap-5">
+						<div className="w-full flex items-center justify-start gap-5 ">
 							<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
 								Introduce Our Campaign
 							</span>
 						</div>
-						<div className="w-full flex flex-col gap-3 md:flex-row items-center justify-between">
+						<div className="w-full flex flex-col gap-3 md:gap-2 md:flex-row items-center justify-between">
 							<span className="w-full text-sm md:text-base font-semibold text-[#868686]">
 								How do something great to help others
 							</span>
-							<Button
-								message={'View All'}
-								href={'/programs'}
-								className="w-full text-base font-semibold px-6 py-3 rounded-xl bg-[#0a7558] "
-								icon={<FiArrowUpRight size={28} />}
-								text={true}
-								border={true}
-							/>
+
+							<span className="flex flex-row justify-center">
+								<Button
+									message="View All"
+									icon={<FiArrowUpRight />}
+									className="px-6 py-3 rounded-xl text-[#0a7558] "
+									text={true}
+									href={'/view-all'}
+								/>
+							</span>
 						</div>
 					</div>
 
@@ -382,7 +275,7 @@ const Home = () => {
 							title={'Help Children Cancer Fighters'}
 							tags={['Medical Help']}
 							description={
-								'Support children of cancer warriors in receiving the best care and treatment for recovery.'
+								'Help the Children of Cancer Warriors to meet their needs for care and treatment as well as possible to achieve recovery.'
 							}
 							img={
 								'https://st4.depositphotos.com/2249091/22137/i/450/depositphotos_221371480-stock-photo-weak-girl-cancer-wearing-pink.jpg'
@@ -394,6 +287,29 @@ const Home = () => {
 							buttonTitle={'Donate'}
 							tagColor={'#cee3de'}
 							tagTextColor={'#228268'}
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col items-start justify-start">
+				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
+					<div className="w-full flex items-center justify-start">
+						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">
+							News and Updates
+						</span>
+					</div>
+					<div className="w-full flex-col items-center justify-start space-y-3">
+						<span className="w-full text-sm md:text-base font-semibold text-[#868686]">
+							Stay informed with the latest developments on
+							charity campaigns to keep you engaged.
+						</span>
+						<Button
+							message="See All News"
+							icon={<FiArrowUpRight />}
+							className="px-6 py-3 rounded-xl text-[#0a7558] "
+							border={true}
+							href={'/news'}
 						/>
 					</div>
 				</div>

@@ -15,13 +15,14 @@ const Button = ({
 	containerWidth,
 }) => {
 	const classes = twMerge(
-		'flex items-center justify-center gap-2	 text-[#] text-center font-semibold py-1.5	',
+		'flex items-center justify-center gap-2	 text-[#fbfcfc] text-center font-semibold py-1.5	',
 		className
 	);
 
 	const backgroundColor = 'bg-[#0a7558] text-zinc-50';
 	const allowBorder = 'border-[#0a7558] border text-[#0a7558]';
-	const onlyText = 'text-[#0a7558] hover:border-[#0a7558] ';
+	const onlyText =
+		'w-fit    items-center justify-center text-[#0a7558] hover:border-[#0a7558] ';
 
 	return (
 		<div
@@ -31,12 +32,16 @@ const Button = ({
 		>
 			<Link
 				to={href}
-				className={`${containerWidth ? 'w-full' : 'w-fit'}`}
+				className={`${
+					containerWidth ? 'w-full flex-row' : 'w-fit flex-row'
+				}`}
 			>
 				<button
-					className={`${containerWidth ? 'w-full' : 'w-fit'}  ${bg && backgroundColor} ${
-						border && allowBorder
-					} ${text && onlyText} ${classes}`}
+					className={`${containerWidth ? 'w-full' : 'w-fit'}  ${
+						bg && backgroundColor
+					} ${border && allowBorder} ${
+						text && onlyText
+					} ${classes} flex-wrap flex-row`}
 				>
 					{message}
 					<span>{icon}</span>
