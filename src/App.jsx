@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { colorTheme } from './constants/colorTheme';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './page/Home';
+import Auth from './page/Auth';
 
 const App = () => {
 	return (
@@ -23,6 +24,10 @@ export const AppRouter = () => {
 			<Route
 				path="/"
 				element={<Home />}
+			/>
+			<Route
+				path="/auth"
+				element={<Auth />}
 			/>
 			<Route
 				path="/about-us"

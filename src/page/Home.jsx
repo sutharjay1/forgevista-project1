@@ -46,7 +46,7 @@ const InfoCard = ({ title, description, icon, color }) => {
 const Home = () => {
 	return (
 		<div className="w-full h-screen bg-[#fefaf6] ">
-			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col md:flex-row items-center justify-center">
+			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col md:flex-row items-center justify-center">
 				<div className="w-full md:w-1/2 md:pr-12 space-y-5">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
 						<span className="text-5xl md:text-7xl font-bold md:leading-tight">
@@ -93,7 +93,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col-reverse md:flex-row items-start justify-start">
+			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col-reverse md:flex-row items-start justify-start">
 				<div className="md:w-1/2 mt-8 md:mt-0">
 					<img
 						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -148,7 +148,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col items-start justify-start">
+			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
 				<div className="w-full flex flex-col items-start  md:items-center justify-center space-y-4">
 					<span className="text-2xl font-medium text-[#fbd066]">
 						CATEGORIES
@@ -213,7 +213,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col items-start justify-start">
+			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
 				<div className="w-full flex flex-col items-center justify-center mt-16 ">
 					<div className="w-full flex flex-col items-center justify-start">
 						<div className="w-full flex items-center justify-start gap-5 ">
@@ -294,7 +294,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="max-w-7xl mx-auto px-5 md:px-0 py-12  flex flex-col items-start justify-start">
+			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
 				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
 					<div className="w-full flex items-center justify-start">
 						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">
@@ -337,7 +337,7 @@ const Home = () => {
 							'The Cianjur earthquake that occurred a few months ago has moved all Indonesian people to help the people  affected by th...'
 						}
 						img={
-							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+							'https://plus.unsplash.com/premium_photo-1661508333411-0246522ee003?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1c2luZXNzJTIwcGl0Y2h8ZW58MHx8MHx8fDA%3D'
 						}
 						date={randomDate}
 						href={'/news/1'}
@@ -350,7 +350,7 @@ const Home = () => {
 							'One of the requirements for women who are getting married is a tetanus shot or tetanus toxoid. TT injections are also know...'
 						}
 						img={
-							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+							'https://plus.unsplash.com/premium_photo-1674499074711-be3eaadc49c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5qZWN0aW9ufGVufDB8fDB8fHww'
 						}
 						date={randomDate}
 						href={'/news/1'}
@@ -363,7 +363,7 @@ const Home = () => {
 							'According to WHO, the frequency of diabetes mellitus worldwide is increasing.Based on research results, children are atm...'
 						}
 						img={
-							'https://images.unsplash.com/flagged/photo-1573823448235-3e7ded467ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+							'https://plus.unsplash.com/premium_photo-1661780250041-86c3331cef25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlhYmV0ZXMlMjB0ZXN0fGVufDB8fDB8fHww'
 						}
 						date={randomDate}
 						href={'/news/1'}
