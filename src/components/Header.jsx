@@ -47,12 +47,14 @@ const Header = () => {
 			>
 				<div className="max-w-7xl w-full flex  items-center justify-between">
 					<div className="text-xl font-semibold tracking-wide select-none">
-						<span className={`text-[${colorTheme.zinc}]`}>
-							Sombo
-							<span className={`text-[${colorTheme.green}]`}>
-								Help
+						<Link to={'/'}>
+							<span className={`text-[${colorTheme.zinc}]`}>
+								Sombo
+								<span className={`text-[${colorTheme.green}]`}>
+									Help
+								</span>
 							</span>
-						</span>
+						</Link>
 					</div>
 					<div className="hidden md:flex items-center justify-center gap-12">
 						<div className="flex items-center justify-center gap-6">
