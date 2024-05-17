@@ -12,8 +12,8 @@ const Auth = () => {
 
 	return (
 		<div className="w-ful h-full flex items-center justify-center ">
-			<div className="grid grid-cols-1 lg:grid-cols-2 grid-flow-col-dense">
-				<div className="h-fit w-full">
+			<div className="grid grid-cols-1 lg:grid-cols-2 ">
+				<div className="h-full w-full">
 					<img
 						className="mx-auto h-full w-full rounded-md object-cover"
 						src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
