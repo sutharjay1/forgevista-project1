@@ -145,7 +145,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]">
+			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
 				<div className="w-full flex flex-col items-center justify-center space-y-4">
 					<span className="text-2xl font-medium text-[#fbd066]">
 						CATEGORIES
@@ -154,7 +154,7 @@ const Home = () => {
 						Program to Empower Others
 					</span>
 				</div>
-				<div className="w-full grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center justify-center gap-8 mt-8">
+				<div className="w-full grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center justify-center gap-2 md:gap-4 mt-8">
 					<Card
 						title={'Healthy Food'}
 						description={
@@ -209,8 +209,8 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]">
-				<div className="w-full flex flex-col items-center justify-center mt-16">
+			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
+				<div className="w-full flex flex-col items-center justify-center mt-8">
 					<div className="w-full flex flex-col items-center justify-start">
 						<div className="w-full flex items-center justify-start gap-5 ">
 							<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
@@ -288,7 +288,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]	">
+			<div className="w-full max-w-7xl mx-auto px-5 pt-14 flex flex-col items-start justify-start selection:bg-[#0a755862]	">
 				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
 					<div className="w-full flex items-center justify-start">
 						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">

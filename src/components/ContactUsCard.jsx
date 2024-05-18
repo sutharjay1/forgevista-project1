@@ -4,13 +4,13 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const ContactUsCard = ({ title, description, icon, href }) => {
 	return (
-		<div className="relative w-full h-[241.92px] rounded-md flex-1 py-3 border border-[#16191e16] bg-[#fbfcfc] shadow-xl selection:bg-[#0a755862] selection:text-[#16191E] transition-all">
+		<div className="relative w-full h-fit rounded-md flex-1 py-3 border border-[#16191e16] bg-[#fbfcfc] shadow-xl selection:bg-[#0a755862] selection:text-[#16191E] transition-all">
 			<div className="w-full flex items-center justify-center">
 				<span className="absolute  flex items-center justify-center p-3 bg-[#fbfcfc]  rounded-full top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg">
 					{icon}
 				</span>
 			</div>
-			<div className="w-full flex items-center justify-center px-6 py-1  pt-14">
+			<div className="w-full flex items-center justify-center px-6 py-1  pt-10">
 				<span className="text-lg font-semibold">{title}</span>
 			</div>
 			<div className="w-full flex items-center justify-center px-6 py-1">
@@ -23,7 +23,7 @@ const ContactUsCard = ({ title, description, icon, href }) => {
 				</span>
 			</div>
 			{href && (
-				<div className="w-full flex items-center justify-center px-6 py-1">
+				<div className="w-full flex items-center justify-center px-6 py-2">
 					<Button
 						message="Address"
 						icon={

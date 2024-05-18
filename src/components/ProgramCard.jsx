@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ title, description, icon, color, href }) => {
 	return (
-		<div className="flex flex-col items-center justify-center space-y-4 p-6  rounded-2xl cursor-pointer hover:shadow-xl hover:drop-shadow-lg transition-shadow duration-300">
+		<div className="flex flex-col items-center justify-center space-y-4 px-6 py-4  rounded-2xl cursor-pointer hover:shadow-xl  transition-shadow duration-200 ">
 			<div
 				className="w-fit flex items-center justify-center rounded-full p-4"
 				style={{ backgroundColor: color }}

@@ -10,12 +10,12 @@ import { IoCall, IoMail } from 'react-icons/io5';
 const ContactUs = () => {
 	return (
 		<div className="w-full h-full flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]">
-			<div className="w-full h-full grid grid-cols-1  lg:grid-cols-2">
-				<div className="mx-auto max-w-7xl px-3 md:px-4">
-					<div className="mx-auto max-w-7xl py-12 md:py-24">
+			<div className="max-w-7xl w-full h-full grid grid-cols-1  lg:grid-cols-2">
+				<div className="mx-auto  px-3 md:px-0">
+					<div className="w-full  py-12 md:py-24">
 						<div className="items-center justify-items-center gap-x-4 gap-y-10 ">
 							<div className="flex items-center justify-center">
-								<div className="px-2 md:px-12">
+								<div className="px-2">
 									<p className="text-4xl sm:text-5xl  font-bold text-[#16191E] md:text-4xl">
 										Get in touch
 									</p>
@@ -147,9 +147,7 @@ const ContactUs = () => {
 				<div className="mx-auto w-full h-fit grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3   items-center justify-center  gap-14">
 					<ContactUsCard
 						title={'Address'}
-						description={[
-							'House No. 10, 3rd Floor, 4th Cross, 8th Main, 1st Block, Koramangala, Bengaluru, Karnataka 560095',
-						]}
+						description={['Mumbai']}
 						icon={
 							<HiOutlineLocationMarker
 								size={44}
