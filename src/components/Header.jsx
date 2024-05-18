@@ -38,6 +38,9 @@ const Header = () => {
 		{
 			title: 'Contact Us',
 			path: '/contact-us',
+		},{
+			title: 'Support Us',
+			path: '/support-us',
 		}
 	];
 

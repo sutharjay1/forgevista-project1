@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { colorTheme } from '../constants/colorTheme';
 import Button from '../components/Button';
 import {
@@ -57,6 +57,23 @@ const InfoCard = ({ title, description, icon, color }) => {
 };
 
 const Home = () => {
+	const [api, setApi] = useState();
+	const [current, setCurrent] = useState(0);
+	const [count, setCount] = useState(0);
+
+	useEffect(() => {
+		if (!api) {
+			return;
+		}
+
+		setCount(api.scrollSnapList().length);
+		setCurrent(api.selectedScrollSnap() + 1);
+
+		api.on('select', () => {
+			setCurrent(api.selectedScrollSnap() + 1);
+		});
+	}, [api]);
+
 	return (
 		<div className="w-full bg-[#fefaf6] ">
 			<div className="max-w-7xl mx-auto px-3 py-12 flex flex-col lg:flex-row items-center justify-between">
@@ -99,7 +116,7 @@ const Home = () => {
 				</div>
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center">
 					<img
-						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						src="../../public/asset1.png"
 						alt="Pattern"
 						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
@@ -109,7 +126,7 @@ const Home = () => {
 			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]">
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
-						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						src="../../public/asset2.png"
 						alt="Pattern"
 						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
@@ -283,6 +300,7 @@ const Home = () => {
 						align: 'start',
 						loop: true,
 					}}
+					setApi={setApi}
 				>
 					<CarouselContent className=" py-5">
 						<CarouselItem className="w-[26rem] px-5 basic-0  md:basis-1/2 lg:basis-1/3">

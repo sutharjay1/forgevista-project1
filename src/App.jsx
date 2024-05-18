@@ -7,6 +7,7 @@ import Auth from './page/Auth';
 import AboutUs from './page/AboutUs';
 import ContactUs from './page/ContactUs';
 import Campaign from './page/Campaign';
+import SupportUs from './page/SupportUs';
 
 const App = () => {
 	return (
@@ -55,6 +56,10 @@ export const AppRouter = () => {
 			<Route
 				path="/contact-us"
 				element={<ContactUs />}
+			/>
+			<Route
+				path="/support-us"
+				element={<SupportUs />}
 			/>
 		</Routes>
 	);
