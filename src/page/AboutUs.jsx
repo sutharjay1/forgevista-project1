@@ -33,8 +33,8 @@ const AboutUs = () => {
 									<div className="w-full flex items-start justify-start py-1 md:py-0">
 										<Button
 											message="Sign Up"
-											href={'/signup?mode=signup'}
-											className="px-8 sm:px-12 py-4  text-base rounded-md bg-[#0a7558]"
+											href={'/auth?mode=signup'}
+											className="px-8 sm:px-12 py-4  text-base rounded-md bg-[#0a7558] hover:bg-[#2d6254] outline-none"
 										/>
 									</div>
 								</div>
