@@ -24,12 +24,14 @@ const SupportUs = () => {
 							type="email"
 							placeholder="Email"
 						/>
-						<button className="min-w-fit flex flex-wrap items-center justify-center gap-1.5 px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
-							Get Started <FiArrowRight />
-						</button>
-						<button className="min-w-fit flex flex-wrap items-center justify-center gap-1.5 px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
-							Invite Friends <IoShareOutline />
-						</button>
+						<div className="w-full flex items-center justify-center flex-1 gap-2">
+							<button className="min-w-fit  w-full flex flex-wrap items-center justify-center gap-1.5 px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
+								Get Started <FiArrowRight />
+							</button>
+							<button className="min-w-fit w-full  flex flex-wrap items-center justify-center gap-1.5 px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
+								Invite Friends <IoShareOutline />
+							</button>
+						</div>
 					</form>
 					<p className="mt-2 text-center text-sm text-gray-600">
 						By signing up, you agree to our terms of service and
