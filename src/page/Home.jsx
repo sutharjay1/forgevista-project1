@@ -159,7 +159,7 @@ const Home = () => {
 			</div>
 			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
 				<div className="w-full flex flex-col items-center justify-center space-y-4">
-					<span className="text-2xl font-medium text-[#fbd066]">
+					<span className="text-3xl font-medium text-[#fbd066]">
 						CATEGORIES
 					</span>
 					<span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#16191E] ">
@@ -220,6 +220,54 @@ const Home = () => {
 						color={'#fee0ea'}
 					/>
 				</div>
+			</div>
+			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862] gap-5">
+				{/* <div className="w-full flex items-center justify-start gap-5 ">
+					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
+						Our Team
+					</span>
+				</div> */}
+
+				<div className="w-full flex flex-col items-center justify-center py-4">
+					<div className="relative w-full h-72 flex items-center justify-start md:rounded-r-full bg-[#0a7558] rounded-lg py-5 lg:py-0">
+						<div className="absolute top-[1rem] right-[1rem] w-[16rem] h-[16rem] hidden md:flex border-2 border-zinc-50 bg-image rounded-full lg:hidden">
+							<div className="absolute top-[4rem] -right-[4rem] w-[8rem] h-[8rem] flex items-center justify-center bg-[#55b8ff] rounded-full">
+								<span className="text-5xl font-bold">35%</span>
+							</div>
+						</div>
+
+						<div className="w-full sm:w-[60%] lg:w-[50%] flex flex-col items-center lg:items-start justify-start pl-5  md:pl-5 lg:pl-44">
+							<div className="items-center justify-items-center gap-x-4 gap-y-5">
+								<p className="mt-1 text-xl lg:text-2xl font-bold text-white lg:text-[#16191E]">
+									Helping businesses succeed through the power
+									of video.
+								</p>
+								<p className="mt-4 text-base font-medium text-white lg:text-[#16191ebd] leading-normal lg:leading-loose py-1 md:py-0">
+									Helping businesses succeed through the power
+									of video and content marketing that sets us
+									apart from the competition and helps us stay
+									ahead of the curve and achieve our goals for
+									the future were we are here today to help
+									you achieve your goals.
+								</p>
+								<div className="w-full flex items-start justify-start py-2 md:pt-2">
+									<Button
+										message="Sign Up"
+										href="/auth?mode=signup"
+										className="px-8 sm:px-12 py-2 text-base rounded-md border border-white text-white hover:bg-white hover:text-[#16191E] outline-none"
+									/>
+								</div>
+							</div>
+						</div>
+						<div className="absolute top-[1rem] right-[1rem] hidden lg:flex w-[16rem] h-[16rem] flex-1 border-2 border-zinc-50 bg-image rounded-full">
+							<div className="absolute top-[4rem] -right-[4rem] w-[8rem] h-[8rem] flex items-center justify-center bg-[#55b8ff] rounded-full">
+								<span className="text-5xl font-bold">35%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/*  */}
 			</div>
 			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
 				<div className="w-full flex flex-col items-center justify-center mt-8">
