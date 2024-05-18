@@ -376,7 +376,12 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto pt-14 pb-5">
+			<div className="w-full max-w-7xl mx-auto pt-14 pb-16">
+				<div className="w-full flex items-center justify-start sm:justify-center gap-5 px-3 pb-5">
+					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
+						Our Team
+					</span>
+				</div>
 				<div className="w-full hidden md:flex items-center justify-center">
 					<Carousel
 						orientation="horizontal"
