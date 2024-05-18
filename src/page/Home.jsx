@@ -301,9 +301,10 @@ const Home = () => {
 						loop: true,
 					}}
 					setApi={setApi}
+					className="w-full"
 				>
-					<CarouselContent className="w-full  py-5">
-						<CarouselItem className="w-[26rem] px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+					<CarouselContent className="w-full  mx-auto py-5">
+						<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 							<EventCard
 								eventTitle="Blood Donation Camp"
 								eventDescription="Blood Donation Camp"
