@@ -354,6 +354,8 @@ const Home = () => {
 							/>
 						</CarouselItem>
 					</CarouselContent>
+					<CarouselPrevious />
+					<CarouselNext />
 				</Carousel>
 			</div>
 			{/*  */}
