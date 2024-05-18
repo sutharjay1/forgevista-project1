@@ -19,7 +19,7 @@ const Button = ({
 		className
 	);
 
-	const backgroundColor = 'bg-[#0a7558] text-zinc-50';
+	const backgroundColor = 'bg-[#0a7558] hover:bg-[#1f6351] text-zinc-50';
 	const allowBorder =
 		'border-[#0a7558] border text-[#0a7558] flex items-center justify-center gap-2 border border-[#0a7558] text-[#0a7558] text-center font-semibold px-3 sm:px-6 py-3 rounded-xl';
 	const onlyText =
