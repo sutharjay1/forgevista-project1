@@ -648,7 +648,7 @@ const Home = () => {
 						<CarouselNext />
 					</Carousel>
 				</div>
-				<div className="w-full h-auto flex md:hidden items-center justify-center ">
+				<div className="w-full h-auto  flex md:hidden items-center justify-center ">
 					<Carousel
 						orientation="horizontal"
 						opts={{
