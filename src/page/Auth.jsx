@@ -28,7 +28,7 @@ const Auth = () => {
 								? 'Sign up to create account'
 								: 'Log in to your account'}
 						</h2>
-						<p className="mt-2 text-center text-base text-gray-600">
+						<p className="mt-3 text-left text-base text-gray-600">
 							{signUpForm
 								? 'Already have an account? '
 								: 'Don’t have an account? '}
@@ -39,7 +39,7 @@ const Auth = () => {
 								{signUpForm ? 'Log in' : 'Sign up'}
 							</span>
 						</p>
-						<form className="mt-8">
+						<form className="mt-6">
 							<div className="space-y-5">
 								{signUpForm && (
 									<div>
