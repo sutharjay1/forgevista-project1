@@ -35,6 +35,10 @@ const Header = () => {
 			title: 'Volunteer',
 			path: '/volunteer',
 		},
+		{
+			title: 'Contact Us',
+			path: '/contact-us',
+		}
 	];
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

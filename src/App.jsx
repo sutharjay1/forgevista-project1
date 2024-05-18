@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './page/Home';
 import Auth from './page/Auth';
 import AboutUs from './page/AboutUs';
+import ContactUs from './page/ContactUs';
+import Campaign from './page/Campaign';
 
 const App = () => {
 	return (
@@ -40,7 +42,7 @@ export const AppRouter = () => {
 			/>
 			<Route
 				path="/campaign"
-				element={<span>Campaign</span>}
+				element={<Campaign />}
 			/>
 			<Route
 				path="/news"
@@ -49,6 +51,10 @@ export const AppRouter = () => {
 			<Route
 				path="/volunteer"
 				element={<span>Volunteer</span>}
+			/>
+			<Route
+				path="/contact-us"
+				element={<ContactUs />}
 			/>
 		</Routes>
 	);
