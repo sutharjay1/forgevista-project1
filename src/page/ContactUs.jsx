@@ -9,7 +9,7 @@ import { IoCall, IoMail } from 'react-icons/io5';
 
 const ContactUs = () => {
 	return (
-		<div className="w-full h-full flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]">
+		<div className="w-full h-full flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]   py-8">
 			<div className="max-w-7xl w-full h-full grid grid-cols-1  lg:grid-cols-2">
 				<div className="mx-auto  px-3 md:px-0">
 					<div className="w-full  py-12 md:py-24">
