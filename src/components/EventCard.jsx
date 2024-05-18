@@ -33,7 +33,7 @@ const EventCard = ({
 	};
 
 	return (
-		<div className="w-full rounded-md flex-1 border border-[#16191e30]   bg-[#fbfcfc] shadow-xl selection:bg-[#0a755891] selection:text-[#16191E] transition-all">
+		<div className="w-full rounded-md flex-1 border border-[#16191e30]   bg-[#fbfcfc] shadow-xl selection:bg-[#0a755862] selection:text-[#16191E] transition-all">
 			<div className="relative w-full flex items-center justify-center p-3">
 				<div className="w-fit h-fit p-4  absolute top-2 left-1 flex flex-col -space-y-1 text-[#fbfcfc]">
 					<span className="bg-[#fbfcfc] text-[#16191E] px-2 text-2xl font-bold rounded-t-md">

@@ -47,7 +47,7 @@ const Home = () => {
 	return (
 		<div className="w-full bg-[#fefaf6] ">
 			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-center justify-between">
-				<div className="w-full lg:w-1/2 space-y-5 flex flex-col items-center justify-start mx-auto	selection:bg-[#0a7558cb]">
+				<div className="w-full lg:w-1/2 space-y-5 flex flex-col items-center justify-start mx-auto	selection:bg-[#0a755862]">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
 						<span className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
 							Do Something Great To Help Others
@@ -93,7 +93,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a7558cb]">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]">
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
 						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -145,7 +145,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]">
 				<div className="w-full flex flex-col items-center justify-center space-y-4">
 					<span className="text-2xl font-medium text-[#fbd066]">
 						CATEGORIES
@@ -209,7 +209,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]">
 				<div className="w-full flex flex-col items-center justify-center mt-16">
 					<div className="w-full flex flex-col items-center justify-start">
 						<div className="w-full flex items-center justify-start gap-5 ">
@@ -288,7 +288,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]	">
+			<div className="w-full max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a755862]	">
 				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
 					<div className="w-full flex items-center justify-start">
 						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">
