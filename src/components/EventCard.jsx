@@ -7,6 +7,8 @@ import { TbMoneybag } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 import { getFormattedDate } from '../lib/getDate';
 import { BsStars } from 'react-icons/bs';
+import { FaRegHeart } from 'react-icons/fa';
+import { RiHeartFill, RiHeartLine } from 'react-icons/ri';
 
 const EventCard = ({
 	eventTitle,
@@ -20,9 +22,15 @@ const EventCard = ({
 	eventPrice,
 	eventOrganizer,
 	eventPurchaseLink,
+	totalLiveParticipants,
 	isLiked,
 }) => {
 	const dateTag = getFormattedDate(eventDate);
+	const [isLikedState, setIsLikedState] = useState(isLiked);
+
+	const handleLike = () => {
+		setIsLikedState(!isLikedState);
+	};
 
 	return (
 		<div className="w-full rounded-md flex-1 border border-[#16191e30]   bg-[#fbfcfc] shadow-xl selection:bg-[#0a755891] selection:text-[#16191E] transition-all">
@@ -33,6 +41,56 @@ const EventCard = ({
 					</span>
 					<span className="bg-[#fbfcfc] px-2 text-base text-[#0a7558] font-semibold rounded-b-md">
 						{dateTag.month}
+					</span>
+				</div>
+				<div
+					className="w-fit h-fit p-4  absolute top-2 right-1 flex flex-col -space-y-1 text-[#fbfcfc]"
+					onClick={handleLike}
+				>
+					<span className="bg-[#fbfcfc] rounded-full p-1.5 flex items-center justify-center text-2xl font-bold cursor-pointer transition-colors">
+						{isLikedState ? (
+							<RiHeartFill
+								size={20}
+								color="#dc2727"
+							/>
+						) : (
+							<RiHeartLine
+								size={20}
+								color="#16191E"
+							/>
+						)}
+					</span>
+				</div>
+				<div
+					className="w-fit h-fit p-4  absolute bottom-2 left-1 flex flex-col -space-y-1 text-[#fbfcfc]"
+					onClick={handleLike}
+				>
+					<span className=" p-1.5 gap-2 flex items-center justify-center text-2xl font-bold cursor-pointer transition-colors">
+						<div className="isolate flex -space-x-2">
+							<img
+								className="relative z-0 inline-block w-6 h-6 rounded-full ring-2 ring-white"
+								src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								alt={eventTitle}
+							/>
+							<img
+								className="relative z-10 inline-block w-6 h-6 rounded-full ring-2 ring-white"
+								src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								alt={eventTitle}
+							/>
+							<img
+								className="relative z-20 inline-block w-6 h-6 rounded-full ring-2 ring-white"
+								src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								alt={eventTitle}
+							/>
+							<img
+								className="relative z-30 inline-block w-6 h-6 rounded-full ring-2 ring-white"
+								src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								alt={eventTitle}
+							/>
+						</div>
+						<span className="text-[#fbfcfc] font-semibold text-sm">
+							+{totalLiveParticipants} Going
+						</span>
 					</span>
 				</div>
 				<img
@@ -114,7 +172,7 @@ const EventCard = ({
 				</div>
 				<div className="w-full flex items-center justify-center gap-3">
 					<Link
-						to={eventLink}
+						to={eventPurchaseLink}
 						className="w-full"
 					>
 						<button className="w-full px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">

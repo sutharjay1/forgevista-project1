@@ -13,6 +13,7 @@ const AboutUs = () => {
 						eventDate="May 25, 2024"
 						eventTags={['Blood Donation']}
 						eventLocation="Location"
+                        totalLiveParticipants={'10K'}
 						eventLink="https://www.google.com/"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
@@ -27,6 +28,7 @@ const AboutUs = () => {
 						eventDate="May 29, 2024"
 						eventTags={['Tree Planting']}
 						eventLocation="Location"
+                        totalLiveParticipants={'10K'}
 						eventLink="https://www.google.com/"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
@@ -41,6 +43,7 @@ const AboutUs = () => {
 						eventDate="May 29, 2024"
 						eventTags={['Tree Planting']}
 						eventLocation="Location"
+                        totalLiveParticipants={'10K'}
 						eventLink="https://www.google.com/"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
@@ -55,12 +58,13 @@ const AboutUs = () => {
 						eventDate="May 29, 2024"
 						eventTags={['Tree Planting']}
 						eventLocation="Location"
+                        totalLiveParticipants={'10K'}
 						eventLink="https://www.google.com/"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
 						eventOrganizer="ABC Foundation"
 						eventPurchaseLink="https://www.google.com/"
-						isLiked={true}
+						isLiked={false} 
 					/>
 				</div>
 			</div>
