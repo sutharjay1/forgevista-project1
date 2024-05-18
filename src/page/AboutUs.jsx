@@ -61,10 +61,9 @@ const AboutUs = () => {
 				</div>
 				<div className="mx-auto w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2   lg:grid-cols-4 items-center justify-center gap-4 sm:gap-12 ">
 					<TeamCard
-						teamMemberName="John Doe"
-						profession="CEO"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc at ultricies luctus, ex est faucibus purus, eu porttitor sapien nunc ac nunc. "
-						profileImage="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+						teamMemberName="Vinay Kumar"
+						profession="CEO 1"
+						profileImage="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						socialLinks={[
 							{
 								name: 'Linkedin',
@@ -89,10 +88,9 @@ const AboutUs = () => {
 						]}
 					/>
 					<TeamCard
-						teamMemberName="John Doe"
-						profession="CEO"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc at ultricies luctus, ex est faucibus purus, eu porttitor sapien nunc ac nunc. "
-						profileImage="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+						teamMemberName="Sunil Kumar"
+						profession="CEO 2"
+						profileImage="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
 						socialLinks={[
 							{
 								name: 'Linkedin',
@@ -117,10 +115,9 @@ const AboutUs = () => {
 						]}
 					/>
 					<TeamCard
-						teamMemberName="John Doe"
-						profession="CEO"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc at ultricies luctus, ex est faucibus purus, eu porttitor sapien nunc ac nunc. "
-						profileImage="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+						teamMemberName="Pankaj Kumar"
+						profession="CEO 3"
+						profileImage="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHVzZXIlMjBhdmF0YXJ8ZW58MHx8MHx8fDA%3D"
 						socialLinks={[
 							{
 								name: 'Linkedin',
@@ -145,10 +142,9 @@ const AboutUs = () => {
 						]}
 					/>
 					<TeamCard
-						teamMemberName="John Doe"
-						profession="CEO"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc at ultricies luctus, ex est faucibus purus, eu porttitor sapien nunc ac nunc. "
-						profileImage="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+						teamMemberName="Radhika"
+						profession="CEO 4"
+						profileImage="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						socialLinks={[
 							{
 								name: 'Linkedin',
