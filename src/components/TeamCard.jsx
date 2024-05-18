@@ -8,12 +8,13 @@ const TeamCard = ({
 	socialLinks,
 }) => {
 	return (
-		<div className="w-full  rounded-2xl   border border-[#16191e29] flex flex-col items-center justify-center shadow-md">
+		<div className="w-full  rounded-2xl   border border-[#16191e29] flex flex-col items-center justify-center shadow-md select-none">
 			<div className="w-full h-auto flex items-center justify-center mt-4">
 				<img
 					src={profileImage}
 					alt={teamMemberName}
 					className="w-32 h-32 rounded-full object-cover"
+					draggable="false"
 				/>
 			</div>
 			<div className="px-4 py-3 w-full flex flex-col items-center justify-center text-center space-y-1.5">

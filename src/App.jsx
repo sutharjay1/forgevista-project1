@@ -8,13 +8,18 @@ import AboutUs from './page/AboutUs';
 import ContactUs from './page/ContactUs';
 import Campaign from './page/Campaign';
 import SupportUs from './page/SupportUs';
+import Footer from './components/Footer';
+import Categories from './page/Categories';
 
 const App = () => {
 	return (
 		<BrowserRouter>
-			<div className="w-full 	h-full flex flex-col items-start justify-start text-[#16191E]">
+			<div className="w-full 	h-full flex flex-1	 flex-col items-start justify-start bg-[#fefaf6] text-[#16191E]">
 				<Header />
-				<AppRouter />
+				<main className="flex-1 w-full">
+					<AppRouter />
+				</main>
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);
@@ -39,7 +44,7 @@ export const AppRouter = () => {
 			/>
 			<Route
 				path="/categories"
-				element={<span>AboutUs</span>}
+				element={<Categories />}
 			/>
 			<Route
 				path="/campaign"

@@ -372,8 +372,8 @@ const Home = () => {
 							/>
 						</CarouselItem>
 					</CarouselContent>
-					<CarouselPrevious />
-					<CarouselNext />
+					<CarouselPrevious className="ml-4	 sm:ml-0 md:ml-12	 md:-bottom-8" />
+					<CarouselNext className="mr-6 sm:mr-0 md:mr-12 md:-bottom-8" />
 				</Carousel>
 			</div>
 			{/*  */}
@@ -656,7 +656,7 @@ const Home = () => {
 							loop: true,
 						}}
 					>
-						<CarouselContent className=" w-[26rem]	py-5">
+						<CarouselContent className=" w-[23rem] ml-1 md:ml-0 py-5">
 							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 								<TeamCard
 									teamMemberName="Vinay Kumar"
@@ -754,6 +754,8 @@ const Home = () => {
 								/>
 							</CarouselItem>
 						</CarouselContent>
+						<CarouselPrevious className="ml-[3.2rem] sm:ml-12 md:ml-32 	" />
+						<CarouselNext className="mr-10 sm:mr-12" />
 					</Carousel>
 				</div>
 			</div>

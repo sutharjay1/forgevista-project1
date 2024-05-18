@@ -3,8 +3,8 @@ import React from 'react';
 
 const SupportUs = () => {
 	return (
-		<div className="w-full bg-[#fefaf6] ">
-			<div className="w-full max-w-7xl mx-auto px-3 py-6">
+		<div className="w-full h-screen bg-[#fefaf6] ">
+			<div className="w-full h-full max-w-7xl mx-auto px-3 py-6">
 				<div className="mx-auto max-w-7xl w-full px-2 py-10 lg:px-0">
 					<div className="w-full flex flex-col lg:items-center lg:justify-between space-y-5">
 						<div className="w-full flex flex-col     items-center justify-center md:w-2/3 lg:w-1/2">
