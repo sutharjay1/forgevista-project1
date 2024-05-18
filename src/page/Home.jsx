@@ -116,7 +116,7 @@ const Home = () => {
 				</div>
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center">
 					<img
-						src="../../public/asset1.png"
+						src="https://res.cloudinary.com/photo-manager/image/upload/v1716051728/ebboahisjfcxmydrip9j.png"
 						alt="Pattern"
 						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
@@ -126,7 +126,7 @@ const Home = () => {
 			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]">
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
-						src="../../public/asset2.png"
+						src="https://res.cloudinary.com/photo-manager/image/upload/v1716051729/okwldlpvalbdooec78es.png"
 						alt="Pattern"
 						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
