@@ -285,7 +285,7 @@ const Home = () => {
 					}}
 				>
 					<CarouselContent className=" py-5">
-						<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+						<CarouselItem className="w-[26rem] px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 							<EventCard
 								eventTitle="Blood Donation Camp"
 								eventDescription="Blood Donation Camp"
@@ -512,7 +512,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto pt-14 pb-16">
+			<div className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16">
 				<div className="w-full flex items-center justify-start sm:justify-center gap-5 px-3 pb-5">
 					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
 						Our Team
@@ -630,13 +630,13 @@ const Home = () => {
 				</div>
 				<div className="w-full h-auto flex md:hidden items-center justify-center ">
 					<Carousel
-						orientation="vertical"
+						orientation="horizontal"
 						opts={{
 							align: 'start',
 							loop: true,
 						}}
 					>
-						<CarouselContent className="h-[20rem]	py-5">
+						<CarouselContent className=" w-[26rem]	py-5">
 							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 								<TeamCard
 									teamMemberName="Vinay Kumar"
@@ -734,8 +734,6 @@ const Home = () => {
 								/>
 							</CarouselItem>
 						</CarouselContent>
-						<CarouselPrevious />
-						<CarouselNext />
 					</Carousel>
 				</div>
 			</div>
