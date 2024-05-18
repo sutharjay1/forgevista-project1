@@ -3,10 +3,13 @@ import { BsArrowRight } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import Button from '../components/Button';
+import ContactUsCard from '../components/ContactUsCard';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { IoCall, IoMail } from 'react-icons/io5';
 
 const ContactUs = () => {
 	return (
-		<div className="w-full h-full flex items-center justify-center transition-all selection:bg-[#0a755862]">
+		<div className="w-full h-full flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]">
 			<div className="w-full h-full grid grid-cols-1  lg:grid-cols-2">
 				{/* <div className="w-full h-full flex items-center justify-center px-4 py-10 mt-10 sm:mt-5 lg:mt-0 sm:px-6 sm:py-16 lg:px-8 lg:py-24">text-[#16191E] className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
 						<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
@@ -243,6 +246,43 @@ const ContactUs = () => {
 						height={500}
 						draggable="false"
 						loading="lazy"
+					/>
+				</div>
+			</div>
+			<div className="max-w-7xl mx-auto w-full h-fit flex flex-col items-center justify-center px-3 md:px-4 py-20">
+				<div className="mx-auto w-full h-fit grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3   items-center justify-center  gap-14">
+					<ContactUsCard
+						title={'Address'}
+						description={[
+							'House No. 10, 3rd Floor, 4th Cross, 8th Main, 1st Block, Koramangala, Bengaluru, Karnataka 560095',
+						]}
+						icon={
+							<HiOutlineLocationMarker
+								size={44}
+								color="#0a7558"
+							/>
+						}
+						href={'https://dribbble.com/shots/19374301-Contact-Us'}
+					/>
+					<ContactUsCard
+						title={'Contact'}
+						description={['+91 9876543210', '+91 9876543210']}
+						icon={
+							<IoCall
+								size={44}
+								color="#0a7558"
+							/>
+						}
+					/>
+					<ContactUsCard
+						title={'Email'}
+						description={['random@email.com', 'unknown@email.com']}
+						icon={
+							<IoMail
+								size={44}
+								color="#0a7558"
+							/>
+						}
 					/>
 				</div>
 			</div>
