@@ -110,16 +110,16 @@ const ContactUs = () => {
 						</div>
 					</div>
 				</div> */}
-				<div className="mx-auto max-w-7xl px-4">
+				<div className="mx-auto max-w-7xl px-3 md:px-4">
 					<div className="mx-auto max-w-7xl py-12 md:py-24">
 						<div className="items-center justify-items-center gap-x-4 gap-y-10 ">
 							{/* contact from */}
 							<div className="flex items-center justify-center">
 								<div className="px-2 md:px-12">
-									<p className="text-2xl font-bold text-[#16191E] md:text-4xl">
+									<p className="text-4xl sm:text-5xl  font-bold text-[#16191E] md:text-4xl">
 										Get in touch
 									</p>
-									<p className="mt-4 text-lg text-[#16191E]">
+									<p className="mt-4 text-lg text-[#16191E] leading-tight">
 										Our friendly team would love to hear
 										from you.
 									</p>
@@ -196,7 +196,7 @@ const ContactUs = () => {
 												className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-[#16191E] focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-[#16191E] dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
 												id="message"
 												placeholder="Leave us a message"
-                                                rows={8}    
+												rows={8}
 												cols={8}
 											/>
 										</div>
