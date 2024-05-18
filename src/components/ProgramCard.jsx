@@ -1,5 +1,6 @@
-import { FiArrowUpRight } from "react-icons/fi";
-import Button from "./Button";
+import { FiArrowUpRight } from 'react-icons/fi';
+import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Card = ({ title, description, icon, color, href }) => {
 	return (
@@ -11,11 +12,11 @@ const Card = ({ title, description, icon, color, href }) => {
 				<span>{icon}</span>
 			</div>
 			<div className="text-3xl font-bold text-center">{title}</div>
-			<div className="text-base font-medium text-center text-[#868686] w-full md:w-[60%]">
+			<div className="text-base font-medium text-center text-[#868686] w-full md:w-[60%] selection:text-[#16191E]">
 				{description}
 			</div>
-			<a
-				href={href}
+			<Link
+				to={href}
 				className="w-full flex justify-center"
 			>
 				<Button
@@ -25,7 +26,7 @@ const Card = ({ title, description, icon, color, href }) => {
 					text={true}
 					href={href}
 				/>
-			</a>
+			</Link>
 		</div>
 	);
 };

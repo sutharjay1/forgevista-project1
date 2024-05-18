@@ -1,27 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import { FaFacebook, FaFacebookF } from 'react-icons/fa';
 import { FcCloseUpMode, FcGoogle } from 'react-icons/fc';
+import { useLocation, useSearchParams } from 'react-router-dom';
 
 const Auth = () => {
-	const [signUpForm, setSignUpForm] = useState(true);
+	const [searchParams] = useSearchParams();
+	const signupParam = searchParams.get('mode') === 'signup';
+	const loginParam = searchParams.get('mode') === 'login';
+	const [signUpForm, setSignUpForm] = useState(signupParam);
+
+	useEffect(() => {
+		const mode = searchParams.get('mode');
+		if (mode === 'signup') {
+			setSignUpForm(true);
+		} else if (mode === 'login') {
+			setSignUpForm(false);
+		}
+	}, [searchParams]);
 
 	const toggleForm = () => {
 		setSignUpForm(!signUpForm);
 	};
 
 	return (
-		<div className="w-ful h-full flex items-center justify-center ">
-			<div className="grid grid-cols-1 lg:grid-cols-2 ">
-				<div className="h-full w-full">
+		<div className="w-full h-full flex items-center justify-center transition-all">
+			<div className="grid grid-cols-1 w-full h-full lg:grid-cols-2">
+				<div className="hidden lg:flex h-full w-full p-2 mx-auto">
 					<img
 						className="mx-auto h-full w-full rounded-md object-cover"
 						src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt=""
 						height={500}
+						draggable="false"
+						loading="lazy"
 					/>
 				</div>
-				<div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+				<div className="w-full h-full flex items-center justify-center px-4 py-10 mt-10 sm:mt-5 lg:mt-0 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
 					<div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
 						<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
 							{signUpForm

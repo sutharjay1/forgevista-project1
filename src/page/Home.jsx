@@ -17,7 +17,7 @@ const Info = ({ title, description }) => {
 	return (
 		<div className="flex flex-col items-start justify-start space-y-2">
 			<div className="text-4xl font-bold">{title}</div>
-			<div className="text-base font-medium text-[#868686] w-full md:w-[50%]">
+			<div className="text-base font-medium text-[#868686] w-full md:w-[50%] selection:text-[#16191E]">
 				{description}
 			</div>
 		</div>
@@ -35,7 +35,7 @@ const InfoCard = ({ title, description, icon, color }) => {
 			</div>
 			<div className="w-full flex flex-col items-start justify-start space-y-2">
 				<div className="text-2xl font-semibold">{title}</div>
-				<div className="w-full text-base font-medium text-[#868686]  md:w-[80%]">
+				<div className="w-full text-base font-medium text-[#868686] lg:w-[80%] selection:text-[#16191E]	">
 					{description}
 				</div>
 			</div>
@@ -45,24 +45,24 @@ const InfoCard = ({ title, description, icon, color }) => {
 
 const Home = () => {
 	return (
-		<div className="w-full h-screen bg-[#fefaf6] ">
-			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col md:flex-row items-center justify-center">
-				<div className="w-full md:w-1/2 md:pr-12 space-y-5">
+		<div className="w-full bg-[#fefaf6] ">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-center justify-between">
+				<div className="w-full lg:w-1/2 space-y-5 flex flex-col items-center justify-start mx-auto	selection:bg-[#0a7558cb]">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
-						<span className="text-5xl md:text-7xl font-bold md:leading-tight">
-							Do Something Great To Help Others{' '}
+						<span className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
+							Do Something Great To Help Others
 						</span>
-						<span className="w-full md:w-[95%] flex items-center justify-start text-base font-semibold text-[#868686] ">
+						<span className="w-full md:w-[90%] lg:w-[80%] flex items-center justify-start text-base font-semibold text-[#868686] selection:text-[#16191E]">
 							SomboHelp is a digital platform for collecting
 							donations to be distributed to people in need.
 						</span>
 					</div>
-					<div className="w-full flex items-center justify-start  space-x-4 pt-5 ">
+					<div className="w-full flex items-center justify-start space-x-4 pt-5">
 						<Button
 							message="Donate Now"
-							className="px-6 py-3 rounded-xl bg-[#0a7558] "
+							className="px-3 sm:px-6 py-3 rounded-xl bg-[#0a7558]"
 						/>
-						<button className="flex items-center justify-center gap-2	border border-[#0a7558] b  text-[#0a7558] text-center font-semibold	px-6 py-3 rounded-xl ">
+						<button className="flex items-center justify-center gap-2 border border-[#0a7558] text-[#0a7558] text-center font-semibold px-3 sm:px-6 py-3 rounded-xl">
 							<span>
 								<IoPlayOutline size={16} />
 							</span>
@@ -72,10 +72,10 @@ const Home = () => {
 					<div className="w-full flex items-start justify-start  pt-5	">
 						<Info
 							title={'15K'}
-							description={'Incredible Volunters'}
+							description={'Incredible Volunteers'}
 						/>
 						<Info
-							title={'100+ '}
+							title={'100+'}
 							description={'Successful Campaigns'}
 						/>
 						<Info
@@ -84,80 +84,77 @@ const Home = () => {
 						/>
 					</div>
 				</div>
-				<div className="md:w-1/2 mt-8 md:mt-0">
+				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center">
 					<img
 						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt="Pattern"
-						className="w-full h-auto mx-auto  object-cover rounded-lg"
+						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col-reverse md:flex-row items-start justify-start">
-				<div className="md:w-1/2 mt-8 md:mt-0">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a7558cb]">
+				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
 						src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt="Pattern"
-						className="w-full h-auto mx-auto  object-cover rounded-lg"
+						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
 					/>
 				</div>
-				<div className="md:w-1/2 md:h-full   flex flex-col items-start justify-start py-10	">
-					<div className="w-full flex flex-col items-start justify-start md:pl-20 space-y-6">
-						<span className="text-2xl font-medium text-[#fbd066]">
-							ABOUT US
+				<div className="w-full lg:w-1/2 flex flex-col items-start justify-start py-10 lg:pl-10 space-y-6">
+					<span className="text-2xl font-medium text-[#fbd066]">
+						ABOUT US
+					</span>
+					<div className="w-full flex flex-col items-start justify-start space-y-3 pb-5">
+						<span className="text-4xl md:text-5xl font-semibold leading-tight">
+							Helping People In Need Around The World
 						</span>
-						<div className="w-full flex flex-col items-start justify-start space-y-3  pb-5">
-							<span className="text-4xl md:text-5xl font-semibold md:leading-tight">
-								Helping People In Need Around The World
-							</span>
-							<span className="w-full text-base font-semibold text-[#868686]">
-								We help provide necessities to help people in
-								need around the world.
-							</span>
-						</div>
-						<div className="w-full flex flex-col items-start justify-start gap-5">
-							<InfoCard
-								title={'Donate'}
-								description={
-									'Providing assistance in the form of money and clothing to help others.'
-								}
-								icon={
-									<PiHandHeartFill
-										size={24}
-										color={'#f9699b'}
-									/>
-								}
-								color={'#fee0ea'}
-							/>
-							<InfoCard
-								title={'Volunteer'}
-								description={
-									'Providing assistance in the form of time, skills and knowledge to help others'
-								}
-								icon={
-									<LuHeartHandshake
-										size={24}
-										color={'#fbd066'}
-									/>
-								}
-								color={'#fef3d7'}
-							/>
-						</div>
+						<span className="w-full text-base font-semibold text-[#868686] selection:text-[#16191E]">
+							We help provide necessities to help people in need
+							around the world.
+						</span>
+					</div>
+					<div className="w-full flex flex-col items-start justify-start gap-5">
+						<InfoCard
+							title={'Donate'}
+							description={
+								'Providing assistance in the form of money and clothing to help others.'
+							}
+							icon={
+								<PiHandHeartFill
+									size={24}
+									color={'#f9699b'}
+								/>
+							}
+							color={'#fee0ea'}
+						/>
+						<InfoCard
+							title={'Volunteer'}
+							description={
+								'Providing assistance in the form of time, skills and knowledge to help others'
+							}
+							icon={
+								<LuHeartHandshake
+									size={24}
+									color={'#fbd066'}
+								/>
+							}
+							color={'#fef3d7'}
+						/>
 					</div>
 				</div>
 			</div>
-
-			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
-				<div className="w-full flex flex-col items-start  md:items-center justify-center space-y-4">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]">
+				<div className="w-full flex flex-col items-center justify-center space-y-4">
 					<span className="text-2xl font-medium text-[#fbd066]">
 						CATEGORIES
 					</span>
-					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
+					<span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#16191E] ">
 						Program to Empower Others
 					</span>
 				</div>
-				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  items-center justify-center gap-8 mt-8">
+				<div className="w-full grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center justify-center gap-8 mt-8">
 					<Card
 						title={'Healthy Food'}
 						description={
@@ -200,7 +197,7 @@ const Home = () => {
 					<Card
 						title={'Education'}
 						description={
-							'Donating to charity for children who need quality education.	'
+							'Donating to charity for children who need quality education.'
 						}
 						icon={
 							<FaBookOpenReader
@@ -212,9 +209,8 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-
-			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
-				<div className="w-full flex flex-col items-center justify-center mt-16 ">
+			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]">
+				<div className="w-full flex flex-col items-center justify-center mt-16">
 					<div className="w-full flex flex-col items-center justify-start">
 						<div className="w-full flex items-center justify-start gap-5 ">
 							<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
@@ -222,7 +218,7 @@ const Home = () => {
 							</span>
 						</div>
 						<div className="w-full flex flex-col gap-3 md:gap-2 md:flex-row items-center justify-between">
-							<span className="w-full text-sm md:text-base font-semibold text-[#868686]">
+							<span className="w-full text-sm md:text-base font-semibold text-[#868686] selection:text-[#16191E]">
 								How do something great to help others
 							</span>
 
@@ -237,8 +233,7 @@ const Home = () => {
 							</span>
 						</div>
 					</div>
-
-					<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 		 items-center justify-center gap-8 mt-8">
+					<div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start justify-start">
 						<PatientDonationCard
 							title={'Help Donate For Cianjur Earthquake Victims'}
 							tags={['Social Service']}
@@ -293,8 +288,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-
-			<div className="max-w-7xl mx-auto px-5 py-12  flex flex-col items-start justify-start">
+			<div className="w-full max-w-7xl mx-auto px-5 py-12 flex flex-col items-start justify-start selection:bg-[#0a7558cb]	">
 				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
 					<div className="w-full flex items-center justify-start">
 						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">
@@ -302,20 +296,20 @@ const Home = () => {
 						</span>
 					</div>
 					<div className="w-full flex-col items-center justify-start space-y-3">
-						<span className="w-full text-sm md:text-base font-semibold text-[#868686]">
+						<span className="w-full text-sm md:text-base font-semibold text-[#868686] selection:text-[#16191E]">
 							Stay informed with the latest developments on
 							charity campaigns to keep you engaged.
 						</span>
 						<Button
 							message="See All News"
 							icon={<FiArrowUpRight />}
-							className="px-6 py-3 rounded-xl text-[#0a7558] "
+							className="px-6	 py-2 rounded-lg text-[#0a7558] "
 							border={true}
 							href={'/news'}
 						/>
 					</div>
 				</div>
-				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-start justify-start gap-8 mt-8">
+				<div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start justify-start gap-8 mt-8">
 					<NewsCard
 						title={
 							'Facts About COVID Kraken, The Latest Omicron Variant'

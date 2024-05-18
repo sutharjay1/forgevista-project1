@@ -11,14 +11,14 @@ const NewsCard = ({ img, date, title, description, href }) => {
 			/>
 			<div className="w-full flex flex-col justify-between">
 				<div>
-					<span className="my-3 mr-2 inline-block rounded-full bg-[#d0d0d0] px-3 py-1 text-sm font-semibold text-[#676767]">
+					<span className="my-3 mr-2 inline-block rounded-full bg-[#d0d0d0] px-3 py-1 text-sm font-semibold text-[#4a4a4a] selection:text-[#16191E]">
 						{date}
 					</span>
 				</div>
 				<span className="inline-flex items-center text-xl font-semibold">
 					{title}
 				</span>
-				<p className="w-full mt-3 text-sm text-[#868686]">
+				<p className="w-full mt-3 text-sm text-[#868686] selection:text-[#16191E]">
 					{description}
 				</p>
 

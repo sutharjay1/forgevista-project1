@@ -39,7 +39,7 @@ const PatientDonationCard = ({
 				<span className="inline-flex items-center text-xl font-semibold">
 					{title}
 				</span>
-				<p className="w-full  mt-3 text-sm text-[#868686]">
+				<p className="w-full  mt-3 text-sm text-[#868686] selection:text-[#16191E]">
 					{description}
 				</p>
 
@@ -56,15 +56,15 @@ const PatientDonationCard = ({
 						</span>
 					</div>
 					<div className="w-full flex items-center justify-between text-sm text-[#868686]">
-						<span>
+						<span className="selection:text-[#16191E]">
 							Raised:{' '}
-							<span className="text-[#ef9f43] font-bold">
+							<span className="text-[#ef9f43] selection:text-[#16191E] font-bold">
 								${amountRaised}
 							</span>
 						</span>
-						<span>
+						<span className="selection:text-[#16191E]">
 							Goal:{' '}
-							<span className="text-[#0a7558] font-bold">
+							<span className="text-[#0a7558] selection:text-[#16191E] font-bold">
 								${goal}
 							</span>
 						</span>
