@@ -249,7 +249,7 @@ const Home = () => {
 				<div className="w-full flex flex-col items-center justify-center py-4">
 					<div className="relative w-full h-72 flex items-center justify-start md:rounded-r-full bg-[#0a7558] rounded-lg py-10		 lg:py-0">
 						<div className="absolute top-[1rem] right-[1rem] w-[16rem] h-[16rem] hidden md:flex border-2 border-zinc-50 bg-image rounded-full lg:hidden">
-							<div className="absolute top-[4rem] -right-[4rem] w-[8rem] h-[8rem] flex items-center justify-center bg-[#55b8ff] rounded-full">
+							<div className="absolute top-[4rem] -right- sm:-right-[1rem] w-[8rem] h-[8rem] flex items-center justify-center bg-[#55b8ff] rounded-full">
 								<span className="text-5xl font-bold">35%</span>
 							</div>
 						</div>
@@ -302,7 +302,7 @@ const Home = () => {
 					}}
 					setApi={setApi}
 				>
-					<CarouselContent className=" py-5">
+					<CarouselContent className="w-full  py-5">
 						<CarouselItem className="w-[26rem] px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 							<EventCard
 								eventTitle="Blood Donation Camp"
@@ -372,8 +372,8 @@ const Home = () => {
 							/>
 						</CarouselItem>
 					</CarouselContent>
-					<CarouselPrevious className="ml-4	 sm:ml-0 md:ml-12	 md:-bottom-8" />
-					<CarouselNext className="mr-6 sm:mr-0 md:mr-12 md:-bottom-8" />
+					<CarouselPrevious className="ml-4	 sm:ml-28 md:ml-16		 md:-bottom-8" />
+					<CarouselNext className="mr-6 sm:mr-0 md:mr-1 md:-bottom-8" />
 				</Carousel>
 			</div>
 			{/*  */}
@@ -538,7 +538,7 @@ const Home = () => {
 						Our Team
 					</span>
 				</div>
-				<div className="w-full hidden md:flex items-center justify-center">
+				<div className="w-full flex items-center justify-center">
 					<Carousel
 						orientation="horizontal"
 						opts={{
@@ -546,7 +546,7 @@ const Home = () => {
 							loop: true,
 						}}
 					>
-						<CarouselContent className="mx-auto py-3">
+						<CarouselContent className=" w-[23rem] md:w-[44rem] lg:w-full	 ml-1 md:ml-0 py-5">
 							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
 								<TeamCard
 									teamMemberName="Vinay Kumar"
@@ -644,11 +644,11 @@ const Home = () => {
 								/>
 							</CarouselItem>
 						</CarouselContent>
-						<CarouselPrevious />
-						<CarouselNext />
+						<CarouselPrevious className="ml-[3.2rem] sm:ml-12 md:ml-[4rem]		 	md:-bottom-[2rem]" />
+						<CarouselNext className="mr-10 sm:mr-12 md:-mr-[3rem] md:right-16	 md:-bottom-[2rem]" />
 					</Carousel>
 				</div>
-				<div className="w-full h-auto  flex md:hidden items-center justify-center ">
+				<div className="w-full h-auto  hidden  items-center justify-center ">
 					<Carousel
 						orientation="horizontal"
 						opts={{
@@ -754,8 +754,8 @@ const Home = () => {
 								/>
 							</CarouselItem>
 						</CarouselContent>
-						<CarouselPrevious className="ml-[3.2rem] sm:ml-12 md:ml-32 	" />
-						<CarouselNext className="mr-10 sm:mr-12" />
+						<CarouselPrevious className="ml-[3.2rem] sm:ml-12 md:ml-32 	md:-bottom-44" />
+						<CarouselNext className="mr-10 sm:mr-12 md:-mr-[3rem] md:-right-1 md:bottom-[9rem]" />
 					</Carousel>
 				</div>
 			</div>
