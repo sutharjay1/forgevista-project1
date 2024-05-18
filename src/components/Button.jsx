@@ -20,9 +20,13 @@ const Button = ({
 	);
 
 	const backgroundColor = 'bg-[#0a7558] text-zinc-50';
-	const allowBorder = 'border-[#0a7558] border text-[#0a7558]';
+	const allowBorder =
+		'border-[#0a7558] border text-[#0a7558] flex items-center justify-center gap-2 border border-[#0a7558] text-[#0a7558] text-center font-semibold px-3 sm:px-6 py-3 rounded-xl';
 	const onlyText =
 		'w-fit    items-center justify-center text-[#0a7558] hover:border-[#0a7558] ';
+
+	const borderTrue =
+		'flex items-center justify-center gap-2 border border-[#0a7558] text-[#0a7558] text-center font-semibold px-3 sm:px-6 py-3 rounded-xl';
 
 	return (
 		<div
@@ -40,8 +44,8 @@ const Button = ({
 					className={`${containerWidth ? 'w-full' : 'w-fit'}  ${
 						bg && backgroundColor
 					} ${border && allowBorder} ${
-						text && onlyText
-					} ${classes} flex-wrap flex-row`}
+						containerWidth && border && borderTrue
+					} ${text && onlyText} ${classes} flex-wrap flex-row`}
 				>
 					{message}
 					<span>{icon}</span>
