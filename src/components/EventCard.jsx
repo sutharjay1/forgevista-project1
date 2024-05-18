@@ -117,7 +117,7 @@ const EventCard = ({
 						to={eventLink}
 						className="w-full"
 					>
-						<button className="w-full px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
+						<button className="w-full px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md text-white bg-[#0a7558] hover:bg-[#1f6351]">
 							Buy Tickets
 						</button>
 					</Link>
@@ -125,7 +125,7 @@ const EventCard = ({
 						to={eventLink}
 						className="w-full"
 					>
-						<button className="w-full px-6 py-2 mt-2 rounded-md bg-[#cbcbcb] hover:bg-[#acacac] text-[#16191E]">
+						<button className="w-full px-4 sm:px-5 md:px-6 py-2 mt-2 rounded-md bg-[#cbcbcb] hover:bg-[#acacac] text-[#16191E]">
 							View Details
 						</button>
 					</Link>
