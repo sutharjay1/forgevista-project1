@@ -13,12 +13,12 @@ const AboutUs = () => {
 						eventDate="May 25, 2024"
 						eventTags={['Blood Donation']}
 						eventLocation="Location"
-                        totalLiveParticipants={'10K'}
-						eventLink="https://www.google.com/"
+						totalLiveParticipants={'10K'}
+						eventLink="/book/blood-donation"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
 						eventOrganizer="SombaHelp Foundation"
-						eventPurchaseLink="https://www.google.com/"
+						eventPurchaseLink="/book/blood-donation"
 						isLiked={true}
 					/>
 					<EventCard
@@ -28,43 +28,43 @@ const AboutUs = () => {
 						eventDate="May 29, 2024"
 						eventTags={['Tree Planting']}
 						eventLocation="Location"
-                        totalLiveParticipants={'10K'}
-						eventLink="https://www.google.com/"
+						totalLiveParticipants={'10K'}
+						eventLink="/book/tree-plantation"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
 						eventOrganizer="ABC Foundation"
-						eventPurchaseLink="https://www.google.com/"
+						eventPurchaseLink="ht/book/tree-plantation"
 						isLiked={true}
 					/>
 					<EventCard
-						eventTitle="Tree Plantation"
-						eventDescription="Tree Plantation"
+						eventTitle="Road Cleaning"
+						eventDescription="Road Cleaning"
 						eventImg="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						eventDate="May 29, 2024"
-						eventTags={['Tree Planting']}
+						eventTags={['Road Cleaning']}
 						eventLocation="Location"
-                        totalLiveParticipants={'10K'}
-						eventLink="https://www.google.com/"
+						totalLiveParticipants={'10K'}
+						eventLink="/book/road-cleaning"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
 						eventOrganizer="ABC Foundation"
-						eventPurchaseLink="https://www.google.com/"
+						eventPurchaseLink="/book/road-cleaning"
 						isLiked={true}
 					/>
 					<EventCard
-						eventTitle="Tree Plantation"
-						eventDescription="Tree Plantation"
+						eventTitle="Teaching Camp"
+						eventDescription="Teaching Camp"
 						eventImg="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						eventDate="May 29, 2024"
-						eventTags={['Tree Planting']}
+						eventTags={['Teaching Camp']}
 						eventLocation="Location"
-                        totalLiveParticipants={'10K'}
-						eventLink="https://www.google.com/"
+						totalLiveParticipants={'10K'}
+						eventLink="/book/teaching-camp"
 						eventTime="10:00 AM - 11:00 AM"
 						eventPrice="Free"
 						eventOrganizer="ABC Foundation"
-						eventPurchaseLink="https://www.google.com/"
-						isLiked={false} 
+						eventPurchaseLink="/book/teaching-camp"
+						isLiked={false}
 					/>
 				</div>
 			</div>
