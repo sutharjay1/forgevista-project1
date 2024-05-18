@@ -4,6 +4,7 @@ import { colorTheme } from './constants/colorTheme';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './page/Home';
 import Auth from './page/Auth';
+import AboutUs from './page/AboutUs';
 
 const App = () => {
 	return (
@@ -31,7 +32,7 @@ export const AppRouter = () => {
 			/>
 			<Route
 				path="/about-us"
-				element={<span>AboutUs</span>}
+				element={<AboutUs />}
 			/>
 			<Route
 				path="/categories"
