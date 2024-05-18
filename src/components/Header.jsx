@@ -102,7 +102,18 @@ const Header = () => {
 									<span>
 										<FcCloseUpMode size={32} />
 									</span>
-									<span className="font-bold">DevUI</span>
+									<Link to={'/'}>
+										<span
+											className={`font-semibold text-[${colorTheme.zinc}]`}
+										>
+											Sombo
+											<span
+												className={`font-semibold text-[${colorTheme.green}]`}
+											>
+												Help
+											</span>
+										</span>
+									</Link>
 								</div>
 								<div className="-mr-2">
 									<button

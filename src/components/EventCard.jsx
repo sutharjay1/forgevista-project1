@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const EventCard = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const EventCard = ({
+	eventTitle,
+	eventDescription,
+	eventImg,
+	eventDate,
+	eventTags,
+	eventLocation,
+	eventLink,
+	eventTime,
+	eventPrice,
+	eventOrganizer,
+	eventPurchaseLink,
+}) => {
+	return <div></div>;
+};
 
-export default EventCard
+export default EventCard;
