@@ -1,17 +1,29 @@
 import React from 'react';
 import { colorTheme } from '../constants/colorTheme';
 import Button from '../components/Button';
-import { IoPlayOutline } from 'react-icons/io5';
+import {
+	IoLogoInstagram,
+	IoLogoLinkedin,
+	IoPlayOutline,
+} from 'react-icons/io5';
 import { PiBowlFood, PiHandHeartFill } from 'react-icons/pi';
 import { LuHeartHandshake } from 'react-icons/lu';
 import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
 import { GiMedicines } from 'react-icons/gi';
-import { BsPeopleFill } from 'react-icons/bs';
+import { BsFacebook, BsPeopleFill } from 'react-icons/bs';
 import { FaBookOpenReader } from 'react-icons/fa6';
 import PatientDonationCard from '../components/PatientDonationCard';
 import Card from '../components/ProgramCard';
 import NewsCard from '../components/NewsCard';
 import randomDate from '../lib/getRandomDate';
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from '@/components/ui/carousel';
+import TeamCard from '../components/TeamCard';
 
 const Info = ({ title, description }) => {
 	return (
@@ -362,6 +374,228 @@ const Home = () => {
 						date={randomDate}
 						href={'/news/1'}
 					/>
+				</div>
+			</div>
+			<div className="w-full max-w-7xl mx-auto pt-14 pb-5">
+				<div className="w-full hidden md:flex items-center justify-center">
+					<Carousel
+						orientation="horizontal"
+						opts={{
+							align: 'start',
+							loop: true,
+						}}
+					>
+						<CarouselContent className="mx-auto py-3">
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Vinay Kumar"
+									profession="CEO 1"
+									profileImage="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Sunil Kumar"
+									profession="CEO 2"
+									profileImage="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Pankaj Kumar"
+									profession="CEO 3"
+									profileImage="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHVzZXIlMjBhdmF0YXJ8ZW58MHx8MHx8fDA%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Radhika"
+									profession="CEO 4"
+									profileImage="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
+				</div>
+				<div className="w-full h-auto flex md:hidden items-center justify-center ">
+					<Carousel
+						orientation="vertical"
+						opts={{
+							align: 'start',
+							loop: true,
+						}}
+					>
+						<CarouselContent className="h-[20rem]	py-5">
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Vinay Kumar"
+									profession="CEO 1"
+									profileImage="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Sunil Kumar"
+									profession="CEO 2"
+									profileImage="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Pankaj Kumar"
+									profession="CEO 3"
+									profileImage="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHVzZXIlMjBhdmF0YXJ8ZW58MHx8MHx8fDA%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+							<CarouselItem className="px-5 basic-0  md:basis-1/2 lg:basis-1/3">
+								<TeamCard
+									teamMemberName="Radhika"
+									profession="CEO 4"
+									profileImage="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+									socialLinks={[
+										{
+											name: 'Linkedin',
+											href: '#',
+											icon: <IoLogoLinkedin size={24} />,
+										},
+										{
+											name: 'Instagram',
+											href: '#',
+											icon: <IoLogoInstagram size={24} />,
+										},
+										{
+											name: 'Facebook',
+											href: '#',
+											icon: <BsFacebook size={24} />,
+										},
+									]}
+								/>
+							</CarouselItem>
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
 				</div>
 			</div>
 		</div>

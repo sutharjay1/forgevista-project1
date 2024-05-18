@@ -8,7 +8,7 @@ const TeamCard = ({
 	socialLinks,
 }) => {
 	return (
-		<div className="min-w-72 w-full  rounded-2xl    border border-[#16191e29] flex flex-col items-center justify-center shadow-lg">
+		<div className="w-96 sm:w-full  rounded-2xl   border border-[#16191e29] flex flex-col items-center justify-center shadow-lg">
 			<div className="w-full h-auto flex items-center justify-center mt-4">
 				<img
 					src={profileImage}
