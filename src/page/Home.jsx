@@ -306,7 +306,7 @@ const Home = () => {
 							<EventCard
 								eventTitle="Tree Plantation"
 								eventDescription="Tree Plantation"
-								eventImg="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								eventImg="https://plus.unsplash.com/premium_photo-1672777647624-2ced35ca04d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
 								eventDate="May 29, 2024"
 								eventTags={['Tree Planting']}
 								eventLocation="Location"
@@ -323,7 +323,7 @@ const Home = () => {
 							<EventCard
 								eventTitle="Road Cleaning"
 								eventDescription="Road Cleaning"
-								eventImg="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								eventImg="https://images.unsplash.com/photo-1715763306006-9777a0873742?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
 								eventDate="May 29, 2024"
 								eventTags={['Road Cleaning']}
 								eventLocation="Location"
@@ -340,7 +340,7 @@ const Home = () => {
 							<EventCard
 								eventTitle="Teaching Camp"
 								eventDescription="Teaching Camp"
-								eventImg="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								eventImg="https://images.unsplash.com/photo-1715505535741-e20f2ea6c573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
 								eventDate="May 29, 2024"
 								eventTags={['Teaching Camp']}
 								eventLocation="Location"
