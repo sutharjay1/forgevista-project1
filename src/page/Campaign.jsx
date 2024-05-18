@@ -4,7 +4,12 @@ import EventCard from '../components/EventCard';
 const Campaign = () => {
 	return (
 		<div className="w-full bg-[#fefaf6] ">
-			<div className="max-w-7xl mx-auto px-5 py-12">
+			<div className="max-w-7xl mx-auto px-3 py-6">
+				<div className="w-full flex items-center justify-start gap-5 mb-4 lg:mb-8">
+					<span className="text-2xl md:text-3xl font-semibold text-[#16191E]">
+						Upcoming Events
+					</span>
+				</div>
 				<div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 					<EventCard
 						eventTitle="Blood Donation Camp"
