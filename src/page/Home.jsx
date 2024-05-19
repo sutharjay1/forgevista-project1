@@ -247,14 +247,14 @@ const Home = () => {
 				</div> */}
 
 				<div className="w-full flex flex-col items-center justify-center py-4">
-					<div className="relative w-full h-72 flex items-center justify-start md:rounded-r-full bg-[#0a7558] rounded-lg py-10		 lg:py-0">
+					<div className="relative w-full h-[21rem] sm:h-[22rem] md:h-72 flex items-center justify-start md:rounded-r-full bg-[#0a7558] rounded-lg py-10		 lg:py-0">
 						<div className="absolute top-[1rem] right-[1rem] w-[16rem] h-[16rem] hidden md:flex border-2 border-zinc-50 bg-image rounded-full lg:hidden">
 							<div className="absolute top-[4rem] -right- sm:-right-[1rem] w-[8rem] h-[8rem] flex items-center justify-center bg-[#55b8ff] rounded-full">
 								<span className="text-5xl font-bold">35%</span>
 							</div>
 						</div>
 
-						<div className="w-full sm:w-[60%] lg:w-[50%] flex flex-col items-center lg:items-start justify-start pl-5  py-10 md:pl-5 lg:pl-44">
+						<div className="w-full sm:w-[60%] lg:w-[50%] flex flex-col items-center lg:items-start justify-start mx-auto sm:mx-0 pl-5  py-10 md:pl-5 lg:pl-44">
 							<div className="items-center justify-items-center gap-x-4 gap-y-5">
 								<p className="mt-1 text-xl lg:text-2xl font-bold text-white lg:text-[#16191E]">
 									Helping businesses succeed through the power

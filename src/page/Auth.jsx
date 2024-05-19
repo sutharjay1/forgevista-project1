@@ -24,7 +24,7 @@ const Auth = () => {
 	};
 
 	return (
-		<div className="w-full h-full flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]   py-8">
+		<div className="w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center transition-all selection:bg-[#0a755862]  py-8 ">
 			<div className="max-w-7xl w-full h-full grid grid-cols-1  lg:grid-cols-2">
 				<div className="hidden lg:flex h-full w-full p-2 mx-auto">
 					<img

@@ -14,7 +14,7 @@ import Categories from './page/Categories';
 const App = () => {
 	return (
 		<BrowserRouter>
-			<div className="w-full 	h-full flex flex-1	 flex-col items-start justify-start bg-[#fefaf6] text-[#16191E]">
+			<div className="w-full h-full min-h-screen flex flex-col bg-[#fefaf6] text-[#16191E]">
 				<Header />
 				<main className="flex-1 w-full">
 					<AppRouter />
