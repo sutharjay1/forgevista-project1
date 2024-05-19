@@ -76,7 +76,10 @@ const Home = () => {
 
 	return (
 		<div className="w-full bg-[#fefaf6] ">
-			<div className="max-w-7xl mx-auto px-3 py-12 flex flex-col lg:flex-row items-center justify-between">
+			<div
+				id="home"
+				className="max-w-7xl mx-auto px-3 py-12 flex flex-col lg:flex-row items-center justify-between"
+			>
 				<div className="w-full lg:w-1/2 space-y-5 flex flex-col items-center justify-start mx-auto	selection:bg-[#0a755862]">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
 						<span className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
@@ -123,7 +126,10 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]">
+			<div
+				id="about-us"
+				className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]"
+			>
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
 						src="https://res.cloudinary.com/photo-manager/image/upload/v1716051729/okwldlpvalbdooec78es.png"
@@ -175,7 +181,10 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
+			<div
+				id="categories"
+				className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]"
+			>
 				<div className="w-full flex flex-col items-center justify-center space-y-4">
 					<span className="text-3xl font-medium text-[#fbd066]">
 						CATEGORIES
@@ -288,7 +297,10 @@ const Home = () => {
 				{/*  */}
 			</div>
 			{/*  */}
-			<div className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16">
+			<div
+				id="upcoming-events"
+				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16"
+			>
 				<div className="w-full flex items-center justify-start gap-5 mb-4 lg:mb-8">
 					<span className="text-2xl md:text-3xl font-semibold text-[#16191E]">
 						Upcoming Events
@@ -378,7 +390,10 @@ const Home = () => {
 				</Carousel>
 			</div>
 			{/*  */}
-			<div className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]">
+			<div
+				id="campaign"
+				className="max-w-7xl mx-auto px-5 pt-6 flex flex-col items-start justify-start selection:bg-[#0a755862]"
+			>
 				<div className="w-full flex flex-col items-center justify-center mt-8">
 					<div className="w-full flex flex-col items-center justify-start">
 						<div className="w-full flex items-center justify-start gap-5 ">
@@ -457,7 +472,10 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto px-5 pt-14 flex flex-col items-start justify-start selection:bg-[#0a755862]	">
+			<div
+				id="news"
+				className="w-full max-w-7xl mx-auto px-5 pt-14 flex flex-col items-start justify-start selection:bg-[#0a755862]	"
+			>
 				<div className="w-full flex  flex-col md:flex-row items-center justify-start md:justify-between">
 					<div className="w-full flex items-center justify-start">
 						<span className="text-3xl  md:text-5xl font-semibold text-[#16191E]">
@@ -533,7 +551,10 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16">
+			<div
+				id="team"
+				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16"
+			>
 				<div className="w-full flex items-center justify-start sm:justify-center gap-5 px-3 pb-5">
 					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
 						Our Team

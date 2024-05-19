@@ -1,7 +1,7 @@
 import { ChevronRight } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { colorTheme } from '../constants/colorTheme';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
 	const menuOptions = [
@@ -48,7 +48,7 @@ const Footer = () => {
 					</h1>
 					<form
 						action=""
-						className="mt-4 inline-flex w-full items-center md:w-3/4"
+						className="mt-4 inline-flex w-full items-center lg:w-3/4"
 					>
 						<input
 							className="flex h-10 w-full rounded-md border border-black/20 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
@@ -63,118 +63,118 @@ const Footer = () => {
 						</button>
 					</form>
 				</div>
-				<div className="w-full mt-8 grid grid-cols-3 gap-6 md:mt-0 lg:w-3/4 lg:grid-cols-3">
-					<div class="w-full p-6 md:w-1/2 lg:w-2/12">
-						<div class="h-full">
-							<h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+				<div className="w-full mt-8 -mb-5 grid grid-cols-3  gap-6 md:mt-0 lg:w-3/4 lg:grid-cols-3">
+					<div className="min-w-fit flex-wrap w-full p-6 md:w-1/2 lg:w-2/12">
+						<div className=" h-full">
+							<h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
 								Company
 							</h3>
 							<ul>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/#campaign"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
-										Features
-									</a>
+										Campaign
+									</HashLink>
 								</li>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/#upcoming-events"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
-										Pricing
-									</a>
+										Upcoming Events
+									</HashLink>
 								</li>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/#about-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
-										Affiliate Program
-									</a>
+										About Us
+									</HashLink>
 								</li>
 								<li>
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+									<HashLink
+										to="/#team"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
-										Press Kit
-									</a>
+										Our Team
+									</HashLink>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="w-full p-6 md:w-1/2 lg:w-2/12">
-						<div class="h-full">
-							<h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+					<div className=" min-w-fit flex-wrap w-full p-6 md:w-1/2 lg:w-2/12">
+						<div className="h-full">
+							<h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
 								Support
 							</h3>
 							<ul>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/#home"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Account
-									</a>
+									</HashLink>
 								</li>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/support-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
-										Help
-									</a>
+										Support Us
+									</HashLink>
 								</li>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/contact-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Contact Us
-									</a>
+									</HashLink>
 								</li>
 								<li>
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+									<HashLink
+										to="/contact-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Customer Support
-									</a>
+									</HashLink>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="w-full p-6 md:w-1/2 lg:w-3/12">
-						<div class="h-full">
-							<h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+					<div className=" min-w-fit flex-wrap w-full pt-6 pl-6 pb-6 md:p-6 md:w-1/2 lg:w-3/12">
+						<div className="h-full">
+							<h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
 								Legals
 							</h3>
 							<ul>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/contact-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Terms &amp; Conditions
-									</a>
+									</HashLink>
 								</li>
-								<li class="mb-4">
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+								<li className="mb-4">
+									<HashLink
+										to="/contact-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Privacy Policy
-									</a>
+									</HashLink>
 								</li>
 								<li>
-									<a
-										class=" text-base font-medium text-gray-900 hover:text-gray-700"
-										href="#"
+									<HashLink
+										to="/contact-us"
+										className="text-base font-medium text-gray-900 hover:text-gray-700"
 									>
 										Licensing
-									</a>
+									</HashLink>
 								</li>
 							</ul>
 						</div>
@@ -185,14 +185,14 @@ const Footer = () => {
 			<div className="mx-auto max-w-6xl items-center justify-between px-4 md:flex lg:px-0">
 				<div className="inline-flex items-center">
 					<div className="text-xl font-semibold tracking-wide select-none">
-						<Link to={'/'}>
+						<HashLink to="/">
 							<span className={`text-[${colorTheme.zinc}]`}>
 								Sombo
 								<span className={`text-[${colorTheme.green}]`}>
 									Help
 								</span>
 							</span>
-						</Link>
+						</HashLink>
 					</div>
 				</div>
 				<div className="mt-4 md:mt-0 selection:text-[#16191E]">
