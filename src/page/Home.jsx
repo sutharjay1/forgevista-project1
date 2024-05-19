@@ -78,7 +78,7 @@ const Home = () => {
 		<div className="w-full bg-[#fefaf6] ">
 			<div
 				id="home"
-				className="max-w-7xl mx-auto px-3 py-12 flex flex-col lg:flex-row items-center justify-between"
+				className="max-w-7xl mx-auto px-3 py-6 flex flex-col lg:flex-row items-center justify-between"
 			>
 				<div className="w-full lg:w-1/2 space-y-5 flex flex-col items-center justify-start mx-auto	selection:bg-[#0a755862]">
 					<div className="w-full flex flex-col items-start justify-start space-y-3">
