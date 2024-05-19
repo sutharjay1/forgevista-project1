@@ -93,7 +93,6 @@ const Header = () => {
 						<Button
 							message="Sign Up"
 							className="px-6 rounded-2xl bg-[#0a7558] "
-							// icon={<FiArrowUpRight size={16} />}
 							href={'/auth'}
 						/>
 					</div>

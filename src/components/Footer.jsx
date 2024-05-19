@@ -40,7 +40,7 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="w-full bg-[#fefaf6] py-4 selection:bg-[#0a755862]">
+		<footer className="w-full bg-[#fefaf6] py-4 selection:bg-[#0a755862] bg-gradient-to-r from-[#fbe7d0] via-[#ffeedbf5] to-emerald-100">
 			<div className="mx-auto flex flex-col md:flex-row max-w-6xl  items-start ">
 				<div className="w-full px-4 md:w-1/2 lg:px-0">
 					<h1 className="max-w-sm text-3xl font-bold">
