@@ -138,7 +138,7 @@ const Home = () => {
 						draggable={false}
 					/>
 				</div>
-				<div className="w-full lg:w-1/2 flex flex-col items-start justify-start py-10 lg:pl-10 space-y-6">
+				<div className="w-full lg:w-1/2 flex flex-col items-start justify-start pb-10 lg:pl-10 space-y-6">
 					<span className="text-2xl font-medium text-[#fbd066]">
 						ABOUT US
 					</span>
