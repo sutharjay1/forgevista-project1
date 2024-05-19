@@ -128,7 +128,7 @@ const Home = () => {
 			</div>
 			<div
 				id="about-us"
-				className="max-w-7xl mx-auto px-5 py-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]"
+				className="max-w-7xl mx-auto px-5 pt-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]"
 			>
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
 					<img
