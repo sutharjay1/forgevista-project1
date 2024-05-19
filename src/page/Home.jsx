@@ -119,7 +119,7 @@ const Home = () => {
 				</div>
 				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center">
 					<img
-						src="https://res.cloudinary.com/photo-manager/image/upload/v1716051728/ebboahisjfcxmydrip9j.png"
+						src="https://res.cloudinary.com/photo-manager/image/upload/v1716097347/e2l7qvlnlyho9ldueert.png"
 						alt="Pattern"
 						className="w-full h-auto object-cover rounded-lg"
 						draggable={false}
