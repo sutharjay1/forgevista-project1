@@ -299,7 +299,7 @@ const Home = () => {
 			{/*  */}
 			<div
 				id="upcoming-events"
-				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16"
+				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16 selection:bg-[#0a755862]"
 			>
 				<div className="w-full flex items-center justify-start gap-5 mb-4 lg:mb-8">
 					<span className="text-2xl md:text-3xl font-semibold text-[#16191E]">
@@ -553,7 +553,7 @@ const Home = () => {
 			</div>
 			<div
 				id="team"
-				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16"
+				className="w-full max-w-7xl mx-auto px-3 pt-14 pb-16 selection:bg-[#0a755862]"
 			>
 				<div className="w-full flex items-center justify-start sm:justify-center gap-5 px-3 pb-5">
 					<span className="text-3xl md:text-5xl font-semibold text-[#16191E]">
