@@ -90,7 +90,7 @@ const Home = () => {
 							donations to be distributed to people in need.
 						</span>
 					</div>
-					<div className="w-full flex items-center justify-start md:space-x-4 pt-5">
+					<div className="w-full flex items-center justify-start md:space-x-4 pt-5 gap-3">
 						<Button
 							message="Donate Now"
 							className="px-3 sm:px-6 py-3 rounded-xl bg-[#0a7558]"
@@ -102,7 +102,7 @@ const Home = () => {
 							Watch Video
 						</button>
 					</div>
-					<div className="w-fit sm:w-full flex items-center justify-start pt-5 ">
+					<div className="w-fit sm:w-full flex items-start justify-start pt-5 ">
 						<Info
 							title={'15K'}
 							description={'Incredible Volunteers'}
