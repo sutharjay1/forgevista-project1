@@ -128,9 +128,9 @@ const Home = () => {
 			</div>
 			<div
 				id="about-us"
-				className="max-w-7xl mx-auto px-5 pt-12 flex flex-col lg:flex-row items-start justify-between selection:bg-[#0a755862]"
+				className="max-w-7xl mx-auto px-5 pt-12 flex flex-col-reverse lg:flex-row items-start justify-between selection:bg-[#0a755862]"
 			>
-				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center ">
+				<div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex items-center justify-center  pb-10">
 					<img
 						src="https://res.cloudinary.com/photo-manager/image/upload/v1716051729/okwldlpvalbdooec78es.png"
 						alt="Pattern"
