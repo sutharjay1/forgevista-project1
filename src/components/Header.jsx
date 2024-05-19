@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './Button';
 import { colorTheme } from './../constants/colorTheme';
 import { Link, useLocation } from 'react-router-dom';
@@ -44,11 +44,16 @@ const Header = () => {
 		}
 	];
 
+
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const handleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
+
+	useEffect(() => {
+		setIsMenuOpen(false);
+	}, [pathname]);
 
 	return (
 		<div className="relative w-full z-20">

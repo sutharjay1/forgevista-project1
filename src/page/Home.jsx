@@ -28,7 +28,7 @@ import EventCard from '../components/EventCard';
 
 const Info = ({ title, description }) => {
 	return (
-		<div className="flex flex-col items-start justify-start space-y-2">
+		<div className="flex flex-col items-start justify-start space-y-1">
 			<div className="text-4xl font-bold">{title}</div>
 			<div className="text-base font-medium text-[#868686] w-full md:w-[50%] selection:text-[#16191E]">
 				{description}
@@ -90,7 +90,7 @@ const Home = () => {
 							donations to be distributed to people in need.
 						</span>
 					</div>
-					<div className="w-full flex items-center justify-start space-x-4 pt-5">
+					<div className="w-full flex items-center justify-start md:space-x-4 pt-5">
 						<Button
 							message="Donate Now"
 							className="px-3 sm:px-6 py-3 rounded-xl bg-[#0a7558]"
@@ -102,7 +102,7 @@ const Home = () => {
 							Watch Video
 						</button>
 					</div>
-					<div className="w-full flex items-start justify-start  pt-5	">
+					<div className="w-fit sm:w-full flex items-center justify-start pt-5 ">
 						<Info
 							title={'15K'}
 							description={'Incredible Volunteers'}
